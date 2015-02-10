@@ -9,8 +9,20 @@
     <items x="155" y="0" width="78" height="23" text="Minu andmed"/>
     <items x="251" y="0" width="53" height="23" text="%(bgcolor:gray)Logi sisse%"/>
   </widgets>
-  <widgets xsi:type="model:Panel" id="9" x="754" y="96" width="247" height="295" measuredWidth="247" measuredHeight="295"/>
-  <widgets xsi:type="model:Image" id="6" x="778" y="106" width="209" height="265" measuredWidth="209" measuredHeight="265" src="Pildid/Login.JPG"/>
+  <widgets xsi:type="model:HLine" id="14" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
+  <widgets xsi:type="model:Panel" id="9" x="754" y="96" width="237" height="137" measuredWidth="237" measuredHeight="137"/>
+  <widgets xsi:type="model:Label" id="10" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="12" x="764" y="106" width="37" height="39" measuredWidth="37" measuredHeight="39" src="Pildid/facebook.jpg"/>
+  <widgets xsi:type="model:Image" id="13" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="Pildid/eesti.jpg"/>
+  <widgets xsi:type="model:Text" id="15" x="816" y="118" text="Logi sisse Facebookiga" measuredWidth="136" measuredHeight="17">
+    <font size="13px" underline="true"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="16" x="764" y="157" width="36" height="36" measuredWidth="36" measuredHeight="36" src="Pildid/google.jpg"/>
+  <widgets xsi:type="model:Text" id="18" x="816" y="166" text="Logi sisse Google kasutajaga&#xD;&#xA;" measuredWidth="171" measuredHeight="17">
+    <font size="13px" underline="true"/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>

@@ -11,7 +11,8 @@
   <widgets xsi:type="model:Label" id="3" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
     <font size="43px"/>
   </widgets>
-  <widgets xsi:type="model:Image" id="4" x="50" y="62" width="157" height="103" measuredWidth="157" measuredHeight="103" src="Pildid/eesti.jpg"/>
+  <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
+  <widgets xsi:type="model:Image" id="7" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="Pildid/eesti.jpg"/>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
