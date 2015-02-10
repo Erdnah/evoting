@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Panel" id="7" x="768" y="96" width="233" height="273" measuredWidth="233" measuredHeight="273"/>
+  <widgets xsi:type="model:Browser" id="1" x="40" width="977" height="527" text="Browser&#xA;http://www.e-valimine.ee/&#xA;" measuredWidth="977" measuredHeight="527"/>
+  <widgets xsi:type="model:LinkBar" id="2" x="686" y="72" text="Kandidaadid,Statistika,Minu andmed, %(bgcolor:gray)Logi sisse%" measuredWidth="305" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="69" height="23" text="Kandidaadid"/>
+    <items x="87" y="0" width="50" height="23" text="Statistika"/>
+    <items x="155" y="0" width="78" height="23" text="Minu andmed"/>
+    <items x="251" y="0" width="53" height="23" text="%(bgcolor:gray)Logi sisse%"/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="9" x="754" y="96" width="247" height="295" measuredWidth="247" measuredHeight="295"/>
+  <widgets xsi:type="model:Image" id="6" x="778" y="106" width="209" height="265" measuredWidth="209" measuredHeight="265" src="Pildid/Login.JPG"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
