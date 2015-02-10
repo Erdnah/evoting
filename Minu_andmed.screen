@@ -11,13 +11,14 @@
   <widgets xsi:type="model:Label" id="3" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
     <font size="43px"/>
   </widgets>
+  <widgets xsi:type="model:Panel" id="11" x="60" y="168" width="398" height="185" measuredWidth="398" measuredHeight="185"/>
   <widgets xsi:type="model:Image" id="4" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="Pildid/eesti.jpg"/>
   <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
   <widgets xsi:type="model:Image" id="6" x="88" y="192" width="129" height="113" measuredWidth="129" measuredHeight="113" src="Pildid/isik.jpg"/>
   <widgets xsi:type="model:Button" id="7" x="112" y="312" width="78" height="18" text="Muuda pilti" measuredWidth="78" measuredHeight="18">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Label" id="10" x="328" y="184" text="%(font:18)Nimi : Argo Neumann \nIsikukood : 39406066021%" measuredWidth="210" measuredHeight="58">
+  <widgets xsi:type="model:Label" id="10" x="248" y="184" text="%(font:18)Nimi : Argo Neumann \nIsikukood : 39406066021%" measuredWidth="210" measuredHeight="58">
     <font size="32px"/>
   </widgets>
   <hRuler/>

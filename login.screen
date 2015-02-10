@@ -23,6 +23,9 @@
   <widgets xsi:type="model:Text" id="18" x="816" y="166" text="Logi sisse Google kasutajaga&#xD;&#xA;" measuredWidth="171" measuredHeight="17">
     <font size="13px" underline="true"/>
   </widgets>
+  <widgets xsi:type="model:Button" id="19" x="974" y="82" text="X" measuredWidth="27" measuredHeight="25">
+    <font/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
