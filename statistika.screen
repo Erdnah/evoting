@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:Browser" id="1" x="40" width="977" height="527" text="Browser&#xA;http://www.e-valimine.ee/" measuredWidth="977" measuredHeight="527"/>
-  <widgets xsi:type="model:LinkBar" id="2" x="622" y="72" text="Kandidaadid,Tulemused,Statistika,Minu andmed,Logi sisse" measuredWidth="385" measuredHeight="23">
+  <widgets xsi:type="model:Browser" id="1" x="8" y="-16" width="977" height="527" text="Browser&#xA;http://www.e-valimine.ee/statistika" measuredWidth="977" measuredHeight="527"/>
+  <widgets xsi:type="model:LinkBar" id="2" x="590" y="72" text="Kandidaadid,Tulemused,%(bgcolor:gray)Statistika%,Minu andmed,Logi sisse" measuredWidth="385" measuredHeight="23">
     <font/>
     <items x="0" y="0" width="69" height="23" text="Kandidaadid"/>
     <items x="87" y="0" width="62" height="23" text="Tulemused"/>
-    <items x="167" y="0" width="50" height="23" text="Statistika"/>
+    <items x="167" y="0" width="50" height="23" text="%(bgcolor:gray)Statistika%"/>
     <items x="235" y="0" width="78" height="23" text="Minu andmed"/>
     <items x="331" y="0" width="53" height="23" text="Logi sisse"/>
   </widgets>
@@ -14,6 +14,12 @@
   </widgets>
   <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
   <widgets xsi:type="model:Image" id="7" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="Pildid/eesti.jpg"/>
+  <widgets xsi:type="model:TabbedPane" id="8" x="272" y="208" width="537" height="230" text="Tab One,Tab Two,Tab Three" measuredWidth="537" measuredHeight="230" selection="0">
+    <items x="10" y="0" width="66" height="27" text="Tab One"/>
+    <items x="76" y="0" width="67" height="27" text="Tab Two"/>
+    <items x="143" y="0" width="74" height="27" text="Tab Three"/>
+    <font/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>

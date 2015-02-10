@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
   <widgets xsi:type="model:Browser" id="1" x="50" width="977" height="527" text="Browser&#xA;http://www.e-valimine.ee/andmed" measuredWidth="977" measuredHeight="527" background="#eeeeee"/>
-  <widgets xsi:type="model:LinkBar" id="2" x="702" y="72" text="Kandidaadid,Statistika,%(bgcolor:gray)Minu andmed%,Logi välja" measuredWidth="305" measuredHeight="23">
+  <widgets xsi:type="model:LinkBar" id="2" x="632" y="72" text="Kandidaadid,Tulemused,Statistika,%(bgcolor:gray)Minu andmed%,Logi välja" measuredWidth="385" measuredHeight="23">
     <font/>
     <items x="0" y="0" width="69" height="23" text="Kandidaadid"/>
-    <items x="87" y="0" width="50" height="23" text="Statistika"/>
-    <items x="155" y="0" width="78" height="23" text="%(bgcolor:gray)Minu andmed%"/>
-    <items x="251" y="0" width="53" height="23" text="Logi välja"/>
+    <items x="87" y="0" width="62" height="23" text="Tulemused"/>
+    <items x="167" y="0" width="50" height="23" text="Statistika"/>
+    <items x="235" y="0" width="78" height="23" text="%(bgcolor:gray)Minu andmed%"/>
+    <items x="331" y="0" width="53" height="23" text="Logi välja"/>
   </widgets>
   <widgets xsi:type="model:Label" id="3" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
     <font size="43px"/>
   </widgets>
-  <widgets xsi:type="model:Panel" id="11" x="60" y="168" width="398" height="185" measuredWidth="398" measuredHeight="185"/>
+  <widgets xsi:type="model:Panel" id="11" x="81" y="172" width="581" height="281" measuredWidth="581" measuredHeight="281"/>
   <widgets xsi:type="model:Image" id="4" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="Pildid/eesti.jpg"/>
   <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
   <widgets xsi:type="model:Image" id="6" x="88" y="192" width="129" height="113" measuredWidth="129" measuredHeight="113" src="Pildid/isik.jpg"/>
   <widgets xsi:type="model:Button" id="7" x="112" y="312" width="78" height="18" text="Muuda pilti" measuredWidth="78" measuredHeight="18">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Label" id="10" x="248" y="184" text="%(font:18)Nimi : Argo Neumann \nIsikukood : 39406066021%" measuredWidth="210" measuredHeight="58">
+  <widgets xsi:type="model:Label" id="10" x="248" y="184" text="%(font:18)Nimi : Argo Neumann%" measuredWidth="189" measuredHeight="33">
     <font size="32px"/>
   </widgets>
   <hRuler/>
