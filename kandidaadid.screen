@@ -14,6 +14,30 @@
   </widgets>
   <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
   <widgets xsi:type="model:Image" id="7" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="Pildid/eesti.jpg"/>
+  <widgets xsi:type="model:SearchField" id="8" x="480" y="188" width="202" text="Search" measuredWidth="202" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="9" x="200" y="184" width="209" text="%(font:+4)Otsi kandidaate nime järgi%" measuredWidth="209" measuredHeight="31">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="10" x="96" y="377" text="%(font:+8)Kandideeri ise%" measuredWidth="147" measuredHeight="39">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="11" x="200" y="240" width="257" text="%(font:+4)Otsi kandidaate piirkonna järgi%" measuredWidth="257" measuredHeight="31">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="12" x="200" y="296" width="209" text="%(font:+4)Otsi kandidaate partei järgi%" measuredWidth="209" measuredHeight="31">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="13" x="480" y="244" width="202" text="Search" measuredWidth="202" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="14" x="480" y="300" width="202" text="Search" measuredWidth="202" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="15" x="664" y="383" width="97" height="32" text="Otsi" measuredWidth="97" measuredHeight="32">
+    <font/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>

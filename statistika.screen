@@ -12,12 +12,17 @@
   <widgets xsi:type="model:Label" id="3" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
     <font size="43px"/>
   </widgets>
-  <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
+  <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="909" measuredWidth="909" measuredHeight="6"/>
   <widgets xsi:type="model:Image" id="7" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="Pildid/eesti.jpg"/>
-  <widgets xsi:type="model:TabbedPane" id="8" x="272" y="208" width="537" height="230" text="Tab One,Tab Two,Tab Three" measuredWidth="537" measuredHeight="230" selection="0">
-    <items x="10" y="0" width="66" height="27" text="Tab One"/>
-    <items x="76" y="0" width="67" height="27" text="Tab Two"/>
-    <items x="143" y="0" width="74" height="27" text="Tab Three"/>
+  <widgets xsi:type="model:TabbedPane" id="9" x="60" y="160" width="909" height="337" text="Häälte jagunemine kogu riigis,Häälte jagunemine piirkondade lõikes,Häälte jagunemine parteide lõikes,Häälte jagunemine konkreetsete kandidaatide lõikes" measuredWidth="909" measuredHeight="337" selection="0">
+    <items x="10" y="0" width="179" height="27" text="Häälte jagunemine kogu riigis"/>
+    <items x="189" y="0" width="220" height="27" text="Häälte jagunemine piirkondade lõikes"/>
+    <items x="409" y="0" width="200" height="27" text="Häälte jagunemine parteide lõikes"/>
+    <items x="609" y="0" width="295" height="27" text="Häälte jagunemine konkreetsete kandidaatide lõikes"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Chart" id="10" x="112" y="232" width="241" height="241" measuredWidth="241" measuredHeight="241"/>
+  <widgets xsi:type="model:Text" id="11" x="427" y="267" width="400" height="120" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." measuredWidth="400" measuredHeight="120">
     <font/>
   </widgets>
   <hRuler/>

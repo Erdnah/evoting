@@ -14,6 +14,12 @@
   </widgets>
   <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
   <widgets xsi:type="model:Image" id="7" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="Pildid/eesti.jpg"/>
+  <widgets xsi:type="model:Label" id="8" x="184" y="200" text="Tere tulemast E-valimiste leheküljele" measuredWidth="688" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="9" x="184" y="272" width="681" height="217" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis dictum mi, a viverra magna. Duis dignissim massa est, nec venenatis leo elementum nec. Suspendisse et risus eu purus lobortis hendrerit et eget urna. Phasellus ullamcorper magna quis odio pellentesque, sed viverra tellus interdum. Donec tincidunt dui ac accumsan ultricies. Quisque vel erat id augue pretium varius. Aliquam elementum libero id augue sagittis, nec iaculis nunc euismod. Nullam consectetur lorem ac nisl venenatis blandit. Proin cursus ipsum id risus suscipit, ac volutpat lectus accumsan. Donec mollis neque in nibh suscipit, non commodo neque facilisis. Mauris libero odio, dictum vel rutrum eu, ornare nec velit. Suspendisse potenti. Quisque vel erat id augue pretium varius. Aliquam elementum libero id augue sagittis, nec iaculis nunc euismod. Nullam consectetur lorem ac nisl venenatis blandit. Proin cursus ipsum id risus suscipit, ac volutpat lectus accumsan. Donec mollis neque in nibh suscipit, non commodo neque facilisis. Mauris libero odio, dictum vel rutrum eu, ornare nec velit. Suspendisse potenti. " measuredWidth="681" measuredHeight="217">
+    <font/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>

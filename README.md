@@ -1,3 +1,3 @@
 # evoting
-Veebirakenduste loomise E-hÃ¤Ã¤letuse projekt.
+Veebirakenduste loomise E-hääletuse projekt.
 Meeskonnas Handre Elias, Argo Neumann ja Thomas Toodo.

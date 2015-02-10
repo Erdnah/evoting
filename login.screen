@@ -11,7 +11,7 @@
     <items x="331" y="0" width="53" height="23" text="%(bgcolor:gray)Logi sisse%"/>
   </widgets>
   <widgets xsi:type="model:HLine" id="14" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
-  <widgets xsi:type="model:Panel" id="9" x="754" y="96" width="237" height="137" measuredWidth="237" measuredHeight="137"/>
+  <widgets xsi:type="model:Panel" id="9" x="754" y="96" width="247" height="137" measuredWidth="247" measuredHeight="137"/>
   <widgets xsi:type="model:Label" id="10" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
     <font size="43px"/>
   </widgets>
@@ -21,10 +21,10 @@
     <font size="13px" underline="true"/>
   </widgets>
   <widgets xsi:type="model:Image" id="16" x="764" y="157" width="36" height="36" measuredWidth="36" measuredHeight="36" src="Pildid/google.jpg"/>
-  <widgets xsi:type="model:Text" id="18" x="816" y="166" text="Logi sisse Google kasutajaga&#xD;&#xA;" measuredWidth="171" measuredHeight="17">
+  <widgets xsi:type="model:Text" id="18" x="816" y="166" text="Logi sisse Google+ kasutajaga&#xD;&#xA;" measuredWidth="180" measuredHeight="17">
     <font size="13px" underline="true"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="19" x="974" y="82" text="X" measuredWidth="27" measuredHeight="25">
+  <widgets xsi:type="model:Button" id="19" x="980" y="82" text="X" measuredWidth="27" measuredHeight="25">
     <font/>
   </widgets>
   <hRuler/>
