@@ -8,9 +8,10 @@
     <items x="155" y="0" width="78" height="23" text="Minu andmed"/>
     <items x="251" y="0" width="53" height="23" text="Logi sisse"/>
   </widgets>
-  <widgets xsi:type="model:Label" id="3" x="111" y="83" text="Title" measuredWidth="86" measuredHeight="67">
+  <widgets xsi:type="model:Label" id="3" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
     <font size="43px"/>
   </widgets>
+  <widgets xsi:type="model:Image" id="4" x="50" y="62" width="157" height="103" measuredWidth="157" measuredHeight="103" src="Pildid/eesti.jpg"/>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
