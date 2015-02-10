@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Alert" id="1" x="317" y="198" text="&#xA;Oled kindel et tahad välja logida ?&#xA;Jah,Ei" measuredWidth="287" measuredHeight="136" icon="warning (large)">
+    <items x="97" y="95" width="80" height="26" text="Jah"/>
+    <items x="192" y="95" width="80" height="26" text="Ei"/>
+    <font size="13px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
