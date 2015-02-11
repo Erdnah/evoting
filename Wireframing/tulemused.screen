@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="-2" y="-24" width="977" height="577" text="Browser&#xA;http://www.e-valimine.ee/statistika" measuredWidth="977" measuredHeight="577"/>
+  <widgets xsi:type="model:LinkBar" id="2" x="590" y="72" text="Kandidaadid,%(bgcolor:gray)Tulemused%,Statistika,Minu andmed,Logi sisse" measuredWidth="385" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="69" height="23" text="Kandidaadid"/>
+    <items x="87" y="0" width="62" height="23" text="%(bgcolor:gray)Tulemused%"/>
+    <items x="167" y="0" width="50" height="23" text="Statistika"/>
+    <items x="235" y="0" width="78" height="23" text="Minu andmed"/>
+    <items x="331" y="0" width="53" height="23" text="Logi sisse"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="3" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
+  <widgets xsi:type="model:Image" id="7" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="../Pildid/eesti.jpg"/>
+  <widgets xsi:type="model:Label" id="8" x="60" y="168" width="381" text="Tulemused reaalajas" measuredWidth="381" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <widgets xsi:type="model:VLine" id="13" x="60" y="272" height="204" measuredWidth="6" measuredHeight="204"/>
+  <widgets xsi:type="model:VLine" id="15" x="118" y="272" height="204" measuredWidth="6" measuredHeight="204"/>
+  <widgets xsi:type="model:Label" id="16" x="463" y="196" text="Hetkel enim hääli saanud kandidaadid" measuredWidth="207" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="17" x="62" y="473" width="555" measuredWidth="555" measuredHeight="6"/>
+  <widgets xsi:type="model:HLine" id="18" x="63" y="270" width="57" measuredWidth="57" measuredHeight="6"/>
+  <widgets xsi:type="model:VLine" id="19" x="208" y="377" measuredWidth="6" measuredHeight="100"/>
+  <widgets xsi:type="model:VLine" id="20" x="264" y="377" measuredWidth="6" measuredHeight="100"/>
+  <widgets xsi:type="model:VLine" id="21" x="330" y="408" height="68" measuredWidth="6" measuredHeight="68"/>
+  <widgets xsi:type="model:VLine" id="22" x="386" y="408" height="68" measuredWidth="6" measuredHeight="68"/>
+  <widgets xsi:type="model:VLine" id="23" x="448" y="440" height="37" measuredWidth="6" measuredHeight="37"/>
+  <widgets xsi:type="model:VLine" id="24" x="504" y="440" height="37" measuredWidth="6" measuredHeight="37"/>
+  <widgets xsi:type="model:VLine" id="25" x="613" y="451" height="26" measuredWidth="6" measuredHeight="26"/>
+  <widgets xsi:type="model:VLine" id="26" x="558" y="451" height="26" measuredWidth="6" measuredHeight="26"/>
+  <widgets xsi:type="model:HLine" id="27" x="210" y="373" width="57" measuredWidth="57" measuredHeight="6"/>
+  <widgets xsi:type="model:HLine" id="28" x="333" y="406" width="57" measuredWidth="57" measuredHeight="6"/>
+  <widgets xsi:type="model:HLine" id="29" x="560" y="449" width="57" measuredWidth="57" measuredHeight="6"/>
+  <widgets xsi:type="model:HLine" id="30" x="450" y="438" width="57" measuredWidth="57" measuredHeight="6"/>
+  <widgets xsi:type="model:Label" id="32" x="80" y="488" text="632" measuredWidth="24" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="33" x="226" y="488" text="310" measuredWidth="24" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="34" x="349" y="488" text="122" measuredWidth="24" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="35" x="471" y="488" text="51" measuredWidth="18" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="36" x="579" y="488" text="895" measuredWidth="24" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Panel" id="1" x="96" y="112" width="729" height="218" measuredWidth="729" measuredHeight="218" border="solid-rounded"/>
+  <widgets xsi:type="model:Image" id="3" x="120" y="171" width="145" height="126" measuredWidth="145" measuredHeight="126" src="../Pildid/isik.jpg"/>
+  <widgets xsi:type="model:Text" id="4" x="144" y="136" text="Praegune pilt" measuredWidth="104" measuredHeight="21">
+    <font size="16px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="5" x="312" y="136" text="Lae pilt üles , võib olla JPEG, PNG või SVG formaat." measuredWidth="386" measuredHeight="21">
+    <font size="16px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="6" x="504" y="176" width="99" text="Vali pilt" measuredWidth="99" measuredHeight="27" background="#cfe2f3" style="round">
+    <font size="13px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="7" x="328" y="240" text="Lae pilt üles" measuredWidth="102" measuredHeight="31" background="#cfe2f3" style="round">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="8" x="328" y="178" width="153" measuredWidth="153" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
