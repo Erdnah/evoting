@@ -51,7 +51,9 @@
   <widgets xsi:type="model:Button" id="20" x="144" y="401" text="KATKESTA" measuredWidth="113" measuredHeight="35">
     <font size="19px" bold="true"/>
   </widgets>
-  <hRuler/>
+  <hRuler>
+    <guides position="100"/>
+  </hRuler>
   <vRuler/>
   <font size="12px"/>
 </model:Screen>
