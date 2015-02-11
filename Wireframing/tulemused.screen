@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:Browser" id="1" x="-2" y="-24" width="977" height="577" text="Browser&#xA;http://www.e-valimine.ee/statistika" measuredWidth="977" measuredHeight="577"/>
+  <widgets xsi:type="model:Browser" id="1" x="-2" y="-40" width="977" height="577" text="Browser&#xA;http://www.e-valimine.ee/statistika" measuredWidth="977" measuredHeight="577"/>
   <widgets xsi:type="model:LinkBar" id="2" x="590" y="72" text="Kandidaadid,%(bgcolor:gray)Tulemused%,Statistika,Minu andmed,Logi sisse" measuredWidth="385" measuredHeight="23">
     <font/>
     <items x="0" y="0" width="69" height="23" text="Kandidaadid"/>
@@ -48,7 +48,22 @@
   <widgets xsi:type="model:Label" id="35" x="471" y="488" text="51" measuredWidth="18" measuredHeight="23">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Label" id="36" x="579" y="488" text="895" measuredWidth="24" measuredHeight="23">
+  <widgets xsi:type="model:Label" id="36" x="579" y="488" text="31" measuredWidth="18" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="37" x="60" y="510" text="Jeesus Henry" measuredWidth="69" measuredHeight="15">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="38" x="210" y="512" text="Maire Aunaste" measuredWidth="77" measuredHeight="15">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="39" x="330" y="512" text="Vilja Savi" measuredWidth="47" measuredHeight="15">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="40" x="450" y="510" text="Pepe Lolo" measuredWidth="53" measuredHeight="15">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="41" x="560" y="510" text="Tibu Kukkuja" measuredWidth="70" measuredHeight="15">
     <font/>
   </widgets>
   <hRuler/>
