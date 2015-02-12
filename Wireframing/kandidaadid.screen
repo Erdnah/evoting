@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
   <widgets xsi:type="model:Browser" id="1" x="40" width="977" height="527" text="Browser&#xA;http://www.e-valimine.ee/kandidaadid" measuredWidth="977" measuredHeight="527"/>
-  <widgets xsi:type="model:LinkBar" id="2" x="622" y="72" text="%(bgcolor:gray)Kandidaadid%,Tulemused,Statistika,Minu andmed,Logi sisse" measuredWidth="385" measuredHeight="23">
-    <font/>
-    <items x="0" y="0" width="69" height="23" text="%(bgcolor:gray)Kandidaadid%"/>
-    <items x="87" y="0" width="62" height="23" text="Tulemused"/>
-    <items x="167" y="0" width="50" height="23" text="Statistika"/>
-    <items x="235" y="0" width="78" height="23" text="Minu andmed"/>
-    <items x="331" y="0" width="53" height="23" text="Logi sisse"/>
-  </widgets>
   <widgets xsi:type="model:Label" id="3" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
     <font size="43px"/>
   </widgets>
@@ -37,6 +29,14 @@
   </widgets>
   <widgets xsi:type="model:Button" id="15" x="664" y="383" width="97" height="32" text="Otsi" measuredWidth="97" measuredHeight="32">
     <font/>
+  </widgets>
+  <widgets xsi:type="model:ButtonBar" id="16" x="464" y="88" width="537" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="537" measuredHeight="27" selection="0">
+    <font/>
+    <items x="0" y="0" width="116" height="27" text="Kandidaadid"/>
+    <items x="116" y="0" width="105" height="27" text="Tulemused"/>
+    <items x="221" y="0" width="90" height="27" text="Statistika"/>
+    <items x="311" y="0" width="127" height="27" text="Minu andmed"/>
+    <items x="438" y="0" width="99" height="27" text="Logi sisse"/>
   </widgets>
   <hRuler/>
   <vRuler/>
