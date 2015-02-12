@@ -3,6 +3,14 @@
   <widgets xsi:type="model:Panel" id="7" x="768" y="96" width="233" height="273" measuredWidth="233" measuredHeight="273"/>
   <widgets xsi:type="model:Browser" id="1" x="40" width="977" height="527" text="Browser&#xA;http://www.e-valimine.ee/&#xA;" measuredWidth="977" measuredHeight="527"/>
   <widgets xsi:type="model:HLine" id="14" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
+  <widgets xsi:type="model:ButtonBar" id="20" x="454" y="92" width="537" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="537" measuredHeight="27" selection="0">
+    <font/>
+    <items x="0" y="0" width="116" height="27" text="Kandidaadid"/>
+    <items x="116" y="0" width="105" height="27" text="Tulemused"/>
+    <items x="221" y="0" width="90" height="27" text="Statistika"/>
+    <items x="311" y="0" width="127" height="27" text="Minu andmed"/>
+    <items x="438" y="0" width="99" height="27" text="Logi sisse"/>
+  </widgets>
   <widgets xsi:type="model:Panel" id="9" x="754" y="96" width="247" height="137" measuredWidth="247" measuredHeight="137"/>
   <widgets xsi:type="model:Label" id="10" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
     <font size="43px"/>
@@ -13,14 +21,6 @@
     <font size="13px" underline="true"/>
   </widgets>
   <widgets xsi:type="model:Image" id="16" x="764" y="157" width="36" height="36" measuredWidth="36" measuredHeight="36" src="../Pildid/google.jpg"/>
-  <widgets xsi:type="model:ButtonBar" id="20" x="449" y="72" width="537" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="537" measuredHeight="27" selection="0">
-    <font/>
-    <items x="0" y="0" width="116" height="27" text="Kandidaadid"/>
-    <items x="116" y="0" width="105" height="27" text="Tulemused"/>
-    <items x="221" y="0" width="90" height="27" text="Statistika"/>
-    <items x="311" y="0" width="127" height="27" text="Minu andmed"/>
-    <items x="438" y="0" width="99" height="27" text="Logi sisse"/>
-  </widgets>
   <widgets xsi:type="model:Text" id="18" x="816" y="166" text="Logi sisse Google+ kasutajaga&#xD;&#xA;" measuredWidth="180" measuredHeight="17">
     <font size="13px" underline="true"/>
   </widgets>
