@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:VScrollbar" id="2" x="386" y="48" height="321" measuredWidth="17" measuredHeight="321"/>
+  <widgets xsi:type="model:Browser" id="3" x="32" y="8" width="449" height="433" text="Browser&#xA;http://www.e-valimine.ee/statistikapiirkond" measuredWidth="449" measuredHeight="433"/>
+  <widgets xsi:type="model:Table" id="1" x="32" y="60" width="449" height="381" text="Perenimi,Eesnimi,Partei,Häälte arv&#xA;perenimi1, eesnimi1, partei1, 4131&#xA;perenimi2, eesnimi2, partei2, 5453&#xA;perenimi3, eesnimi3, partei3, 2131&#xA;perenimi4, eesnimi4, partei4, 4141&#xA;perenimi5, eesnimi5, partei5, 4432&#xA;perenimi6, eesnimi6, partei6, 5612&#xA;perenimi7, eesnimi7, partei7, 902&#xA;perenimi8, eesnimi8, partei8, 121&#xA;perenimi9, eesnimi9, partei9, 56&#xA;perenimi10, eesnimi10, partei10, 1023&#xA;perenimi11, eesnimi11, partei11, 655&#xA;perenimi12, eesnimi12, partei12, 654&#xA;perenimi13, eesnimi13, partei13, 232&#xA;perenimi14, eesnimi14, partei14, 15&#xA;perenimi15,eesnimi15,partei15,9&#xA;perenimi16,eesnimi16,partei16,545&#xA;perenimi17,eesnimi17,partei17,434" measuredWidth="449" measuredHeight="381" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="4" x="464" y="60" height="381" measuredWidth="17" measuredHeight="381"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -59,7 +59,7 @@
   <widgets xsi:type="model:Text" id="41" x="560" y="510" text="Tibu Kukkuja" measuredWidth="70" measuredHeight="15">
     <font/>
   </widgets>
-  <widgets xsi:type="model:ButtonBar" id="42" x="416" y="64" width="537" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="537" measuredHeight="27" selection="0">
+  <widgets xsi:type="model:ButtonBar" id="42" x="416" y="64" width="537" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="537" measuredHeight="27" selection="1">
     <font/>
     <items x="0" y="0" width="116" height="27" text="Kandidaadid"/>
     <items x="116" y="0" width="105" height="27" text="Tulemused"/>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="8" y="-16" width="977" height="527" text="Browser&#xA;http://www.e-valimine.ee/statistika" measuredWidth="977" measuredHeight="527"/>
+  <widgets xsi:type="model:Label" id="3" x="224" y="72" text="%(color:Blue)E-Valimised%" measuredWidth="226" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <widgets xsi:type="model:HLine" id="5" x="60" y="152" width="909" measuredWidth="909" measuredHeight="6"/>
+  <widgets xsi:type="model:Image" id="7" x="80" y="62" width="129" height="87" measuredWidth="129" measuredHeight="87" src="../Pildid/eesti.jpg"/>
+  <widgets xsi:type="model:TabbedPane" id="9" x="60" y="160" width="909" height="337" text="Häälte jagunemine kogu riigis,Häälte jagunemine piirkondade lõikes,Häälte jagunemine parteide lõikes,Häälte jagunemine konkreetsete kandidaatide lõikes" measuredWidth="909" measuredHeight="337" selection="1">
+    <items x="10" y="0" width="179" height="27" text="Häälte jagunemine kogu riigis"/>
+    <items x="189" y="0" width="220" height="27" text="Häälte jagunemine piirkondade lõikes"/>
+    <items x="409" y="0" width="200" height="27" text="Häälte jagunemine parteide lõikes"/>
+    <items x="609" y="0" width="295" height="27" text="Häälte jagunemine konkreetsete kandidaatide lõikes"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:ButtonBar" id="12" x="464" y="80" width="505" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="505" measuredHeight="27" selection="2">
+    <font/>
+    <items x="0" y="0" width="109" height="27" text="Kandidaadid"/>
+    <items x="109" y="0" width="99" height="27" text="Tulemused"/>
+    <items x="208" y="0" width="84" height="27" text="Statistika"/>
+    <items x="292" y="0" width="119" height="27" text="Minu andmed"/>
+    <items x="411" y="0" width="94" height="27" text="Logi sisse"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="16" x="208" y="208" width="611" height="269" measuredWidth="611" measuredHeight="269" src="../Pildid/eestikaart.png"/>
+  <widgets xsi:type="model:Link" id="17" x="688" y="256" text="Ida-Virumaa" measuredWidth="68" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="18" x="584" y="236" text="Lääne-Virumaa" measuredWidth="83" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="19" x="449" y="248" text="Harjumaa" measuredWidth="55" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="20" x="635" y="360" text="Tartumaa" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="21" x="616" y="317" text="Jõgevamaa" measuredWidth="62" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="22" x="677" y="392" text="Põlvamaa" measuredWidth="55" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="23" x="656" y="432" text="Võrumaa" measuredWidth="51" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="24" x="584" y="414" text="Valgamaa" measuredWidth="55" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="25" x="520" y="360" text="Viljandimaa" measuredWidth="65" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="26" x="440" y="352" text="Pärnumaa" measuredWidth="57" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="27" x="544" y="283" text="Järvamaa" measuredWidth="52" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="28" x="456" y="295" text="Raplamaa" measuredWidth="55" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="29" x="376" y="305" text="Läänemaa" measuredWidth="57" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="30" x="256" y="360" text="Saaremaa" measuredWidth="54" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="31" x="272" y="295" text="Hiiumaa" measuredWidth="48" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

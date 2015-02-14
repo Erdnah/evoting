@@ -13,17 +13,35 @@
     <items x="609" y="0" width="295" height="27" text="Häälte jagunemine konkreetsete kandidaatide lõikes"/>
     <font/>
   </widgets>
-  <widgets xsi:type="model:Chart" id="10" x="112" y="232" width="241" height="241" measuredWidth="241" measuredHeight="241"/>
-  <widgets xsi:type="model:Text" id="11" x="427" y="267" width="400" height="120" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." measuredWidth="400" measuredHeight="120">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:ButtonBar" id="12" x="464" y="80" width="505" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="505" measuredHeight="27" selection="0">
+  <widgets xsi:type="model:ButtonBar" id="12" x="464" y="80" width="505" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="505" measuredHeight="27" selection="2">
     <font/>
     <items x="0" y="0" width="109" height="27" text="Kandidaadid"/>
     <items x="109" y="0" width="99" height="27" text="Tulemused"/>
     <items x="208" y="0" width="84" height="27" text="Statistika"/>
     <items x="292" y="0" width="119" height="27" text="Minu andmed"/>
     <items x="411" y="0" width="94" height="27" text="Logi sisse"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="13" x="153" y="216" width="297" height="255" measuredWidth="297" measuredHeight="255" src="../Pildid/chart.jpg"/>
+  <widgets xsi:type="model:Table" id="14" x="576" y="248" text="Partei,Häälte arv&#xA;partei1, 120459&#xA;partei2, 100343&#xA;partei3, 98532&#xA;partei4, 90123&#xA;partei5,64330" measuredWidth="111" measuredHeight="130" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="328" y="304" text="partei1" measuredWidth="42" measuredHeight="23" foreground="#ffffff">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="296" y="392" text="partei2" measuredWidth="42" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="17" x="240" y="384" text="partei3" measuredWidth="42" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="18" x="216" y="336" text="partei4" measuredWidth="42" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="19" x="208" y="304" text="partei5" measuredWidth="42" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="20" x="584" y="414" text="Vaata kogu listi" measuredWidth="83" measuredHeight="23">
+    <font/>
   </widgets>
   <hRuler/>
   <vRuler/>

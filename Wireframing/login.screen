@@ -3,7 +3,7 @@
   <widgets xsi:type="model:Panel" id="7" x="768" y="96" width="233" height="273" measuredWidth="233" measuredHeight="273"/>
   <widgets xsi:type="model:Browser" id="1" x="40" width="977" height="527" text="Browser&#xA;http://www.e-valimine.ee/&#xA;" measuredWidth="977" measuredHeight="527"/>
   <widgets xsi:type="model:HLine" id="14" x="60" y="152" width="957" measuredWidth="957" measuredHeight="6"/>
-  <widgets xsi:type="model:ButtonBar" id="20" x="454" y="92" width="537" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="537" measuredHeight="27" selection="0">
+  <widgets xsi:type="model:ButtonBar" id="20" x="454" y="92" width="537" text="Kandidaadid, Tulemused, Statistika, Minu andmed, Logi sisse" measuredWidth="537" measuredHeight="27">
     <font/>
     <items x="0" y="0" width="116" height="27" text="Kandidaadid"/>
     <items x="116" y="0" width="105" height="27" text="Tulemused"/>
