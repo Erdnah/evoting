@@ -40,9 +40,6 @@
   <widgets xsi:type="model:Label" id="19" x="208" y="304" text="partei5" measuredWidth="42" measuredHeight="23">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Link" id="20" x="584" y="414" text="Vaata kogu listi" measuredWidth="83" measuredHeight="23">
-    <font/>
-  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
