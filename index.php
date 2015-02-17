@@ -40,7 +40,7 @@
             <article>
                 <h2>Lalala</h2>
                 <p>
-                    <?php echo "My first PHP script!";?>
+                    <?php echo "asd";  ?>
                 </p>
             </article>
 
