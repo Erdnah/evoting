@@ -18,7 +18,7 @@ nav {
 nav ul {
 	margin: 0;
 	padding: 0;
-	text-align:left;
+	text-align:right;
 	
 }
 	nav ul li {
@@ -38,6 +38,7 @@ nav ul {
 			line-height: 56px;
 			padding: 0 24px;
 			text-decoration: none;
+            text-align: left;
 		}
 	nav > ul > li > a > .caret {
 	border-top: 4px solid #aaa;
