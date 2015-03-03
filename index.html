@@ -12,7 +12,7 @@
          <script>
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '1554949304755420    ',
+          appId      : '1554949304755420',
           xfbml      : true,
           version    : 'v2.1'
         });
@@ -39,7 +39,7 @@
 			<a href="login.html">Logi sisse <span class="caret"></span></a>
 			<div>
 				<ul>
-					<li><a href="login.html">Facebook</a></li>
+					<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
 					<li><a href="login.html">Google+</a></li>
 				</ul>
 			</div>
