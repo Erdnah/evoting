@@ -9,32 +9,45 @@
     </head>
 
     <body>
+         <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1554949304755420    ',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
 
         <header>
         	<h1> E-Valimised</h1>
             <nav>
-                
-                <ul>	
-                    <li>
-                        <a href="Kandidaadid.php">Kandidaadid</a>
-                    </li>
-                    <li>
-                        <a href="Tulemused.php">Tulemused</a>
-                    </li>
-                    <li>
-                        <a href="Statistika.php">Statistika</a>
-                    </li>
-                    <li>
-                        <a href="Minuandmed.php">Minu andmed</a>
-                    </li>
-                    <li>
-                        <a href="login.php">Logi sisse</a>
-                    </li>
-                    
-                    
-                   
-                </ul>
-            </nav>
+	<ul>
+		<li><a href="kandidaadid.php">Kandidaadid</a></li>
+        <li><a href="tulemused.php">Tulemused</a></li>
+        <li><a href="statistika.php">Statistika</a></li>
+        <li><a href="andmed.php">Minu andmed</a></li>
+		<li>
+			<a href="login.html">Logi sisse <span class="caret"></span></a>
+			<div>
+				<ul>
+					<li><a href="login.html">Facebook</a></li>
+					<li><a href="login.html">Google+</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</nav>
+           
+               
         </header>
 		<hr>
         <section>
@@ -51,10 +64,7 @@
         </section>
 
         <footer>
-            <p>
-            <hr>
-                &copy; erdnah/evoting
-            </p>
+           
         </footer>
 
     </body>
