@@ -16,7 +16,7 @@
 function connect()
 {
 	// DB connection info
-	$host = " kjfsy4fvmp.database.windows.net,1433";
+	$host = " kjfsy4fvmp.database.windows.net";
 	$user = "ehaaletus";
 	$pwd = "Salasona123";
 	$db = "ehaaletus";
