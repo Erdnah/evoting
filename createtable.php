@@ -19,7 +19,7 @@ include_once 'taskmodel.php';
 $conn = connect();
 
 $sql = "CREATE TABLE items(
-			id INT NOT NULL AUTO_INCREMENT, 
+			id INT NOT NULL, 
 			PRIMARY KEY(id),
 			name VARCHAR(30),
 			category VARCHAR(30),
