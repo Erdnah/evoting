@@ -23,8 +23,7 @@ $sql = "CREATE TABLE items(
 			PRIMARY KEY(id),
 			name VARCHAR(30),
 			category VARCHAR(30),
-			date DATE,
-			is_complete  BOOLEAN)";
+			date DATE)";
 
 try{
 	$conn->query($sql);
