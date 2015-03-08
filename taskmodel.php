@@ -16,12 +16,12 @@
 function connect()
 {
 	// DB connection info
-	$host = "tcp:kjfsy4fvmp.database.windows.net,1433";
+	$server = "tcp:kjfsy4fvmp.database.windows.net";
 	$user = "ehaaletus@kjfsy4fvmp";
 	$pwd = "Salasona123";
 	$db = "ehaaletus";
 	try{
-		$conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
+		$conn = new PDO( "sqlsrv:Server= $server ; Database = $db ", $user, $pwd);
 		$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	}
 	catch(Exception $e){
