@@ -24,7 +24,7 @@ $sql = "CREATE TABLE items(
 			name VARCHAR(30),
 			category VARCHAR(30),
 			date DATE,
-			is_complete  BOOL)";
+			is_complete  BOOLEAN)";
 
 try{
 	$conn->query($sql);
