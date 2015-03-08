@@ -50,12 +50,11 @@ function getAllItems()
 function addItem($name, $category, $date, $is_complete)
 {
 	$conn = connect();
-	$sql = "INSERT INTO items (name, category, date, is_complete) VALUES (?, ?, ?, ?)";
+	$sql = "INSERT INTO items (name, category, date) VALUES (?, ?, ?)";
 	$stmt = $conn->prepare($sql);
 	$stmt->bindValue(1, $name);
 	$stmt->bindValue(2, $category);
 	$stmt->bindValue(3, $date);
-	$stmt->bindValue(4, $is_complete);
 	$stmt->execute();
 }
 
