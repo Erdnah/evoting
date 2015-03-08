@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -39,7 +43,6 @@
 			<a href="login.html">Logi sisse <span class="caret"></span></a>
 			<div>
 				<ul>
-					<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
 					<li><a href="login.html">Google+</a></li>
 				</ul>
 			</div>
