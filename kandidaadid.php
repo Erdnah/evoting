@@ -47,7 +47,7 @@
                     <th>Esinimi</th>
                     <th>Aadress</th>
                 </tr>
-                <tr>
+                
                     <?php
                     /** * Copyright 2013 Microsoft Corporation
                      *
@@ -66,10 +66,10 @@
                     include_once 'taskmodel.php';
 
                     foreach (getAllItems() as $value) {
-                        echo "<td>$value[1]</td>" . "<td>$value[2]</td>" . "<td>.$value[3]</td>";
+                        echo "<tr><td>$value[1]</td>" . "<td>$value[2]</td>" . "<td>.$value[3]</td></tr>";
                     }
                     ?>
-                </tr>
+                
             </table>
         </section>
 
