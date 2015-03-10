@@ -62,7 +62,9 @@
                 $items = getAllItems();
                 return $items;
             }
-            print_r(getItems())
+            foreach (getItems() as $value) {
+                echo $value[1], $value[2], $value[3];
+            }
             ?>
         </section>
 
