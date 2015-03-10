@@ -64,7 +64,6 @@
             }
             print_r(getItems())
             ?>
-            asd
         </section>
 
         <footer>

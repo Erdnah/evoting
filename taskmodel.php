@@ -19,7 +19,7 @@ function connect()
 	$server = "tcp:vzwses3zoj.database.windows.net";
 	$user = "evoting@kjfsy4fvmp";
 	$pwd = "Salasona123";
-	$db = "ehaaletus";
+	$db = "evoting";
 	try{
 		$conn = new PDO( "sqlsrv:Server= $server ; Database = $db ", $user, $pwd);
 		$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
