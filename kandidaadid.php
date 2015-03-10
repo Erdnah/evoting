@@ -63,7 +63,7 @@
                 return $items;
             }
             foreach (getItems() as $value) {
-                echo $value[1], $value[2], $value[3];
+                echo $value[1]. " " . $value[2]. " " .$value[3]. "<BR>";
             }
             ?>
         </section>
