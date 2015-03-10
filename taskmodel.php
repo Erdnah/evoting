@@ -17,7 +17,7 @@ function connect()
 {
 	// DB connection info
 	$server = "tcp:vzwses3zoj.database.windows.net";
-	$user = "evoting@kjfsy4fvmp";
+	$user = "evoting@vzwses3zoj";
 	$pwd = "Salasona123";
 	$db = "evoting";
 	try{
