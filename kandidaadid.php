@@ -41,7 +41,7 @@
         </header>
         <hr>
         <section>
-            <table style="width:100%">
+            <table>
                 <tr>
                     <th>Perenimi</th>
                     <th>Esinimi</th>
@@ -66,7 +66,7 @@
                     include_once 'taskmodel.php';
 
                     foreach (getAllItems() as $value) {
-                        echo "<tr><td>$value[1]</td>" . "<td>$value[2]</td>" . "<td>.$value[3]</td></tr>";
+                        echo "<tr><td>$value[1]</td>" . "<td>$value[2]</td>" . "<td>$value[3]</td></tr>";
                     }
                     ?>
                 
