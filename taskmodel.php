@@ -16,8 +16,8 @@
 function connect()
 {
 	// DB connection info
-	$server = "tcp:kjfsy4fvmp.database.windows.net";
-	$user = "ehaaletus@kjfsy4fvmp";
+	$server = "tcp:vzwses3zoj.database.windows.net";
+	$user = "evoting@kjfsy4fvmp";
 	$pwd = "Salasona123";
 	$db = "ehaaletus";
 	try{
@@ -42,7 +42,7 @@ function markItemComplete($item_id)
 function getAllItems()
 {
 	$conn = connect();
-	$sql = "SELECT * FROM items";
+	$sql = "SELECT * FROM persons";
 	$stmt = $conn->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
