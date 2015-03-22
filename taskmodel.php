@@ -56,7 +56,7 @@ function getAllPartys()
 function getAllScores()
 {
 	$conn = connect();
-	$sql = "SELECT * FROM tulem_kandid ORDER BY skoor";
+	$sql = "SELECT * FROM tulem_kandid ORDER BY skoor DESC";
 	$stmt = $conn->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
