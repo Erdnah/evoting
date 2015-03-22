@@ -10,7 +10,7 @@
     <body>
 
         <header>
-            <h1> E-Valimised</h1>
+            <h1 href="index.html"> E-Valimised</h1>
             <nav>
                 <ul>
                     <li>
