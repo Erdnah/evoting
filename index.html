@@ -18,29 +18,31 @@
 					console.log('Sign-in state: ' + authResult['error']);
 				}
 			}
+
 			function statusChangeCallback(response) {
-                console.log('statusChangeCallback');
-                console.log(response);
-                // The response object is returned with a status field that lets the
-                // app know the current login status of the person.
-                // Full docs on the response object can be found in the documentation
-                // for FB.getLoginStatus().
-                if (response.status === 'connected') {
-                    document.getElementById('logi').innerHTML = 'Logi välja';
-                } else if (response.status === 'not_authorized') {
-                    // The person is logged into Facebook, but not your app.
-                    document.getElementById('status').innerHTML = 'Please log ' + 'into this app.';
-                } else {
-                    // The person is not logged into Facebook, so we're not sure if
-                    // they are logged into this app or not.
-                    document.getElementById('status').innerHTML = 'Please log ' + 'into Facebook.';
-                }
-            }
+				console.log('statusChangeCallback');
+				console.log(response);
+				// The response object is returned with a status field that lets the
+				// app know the current login status of the person.
+				// Full docs on the response object can be found in the documentation
+				// for FB.getLoginStatus().
+				if (response.status === 'connected') {
+					document.getElementById('logi').innerHTML = 'Logi välja';
+				} else if (response.status === 'not_authorized') {
+					// The person is logged into Facebook, but not your app.
+					document.getElementById('status').innerHTML = 'Please log ' + 'into this app.';
+				} else {
+					// The person is not logged into Facebook, so we're not sure if
+					// they are logged into this app or not.
+					document.getElementById('status').innerHTML = 'Please log ' + 'into Facebook.';
+				}
+			}
+
 			function checkLoginState() {
-                FB.getLoginStatus(function(response) {
-                    statusChangeCallback(response);
-                });
-            }
+				FB.getLoginStatus(function(response) {
+					statusChangeCallback(response);
+				});
+			}
         </script>
         <header>
             <h1> E-Valimised</h1>
@@ -50,7 +52,9 @@
                         <a href="kandidaadid.php">Kandidaadid</a>
                     </li>
                     <li>
-                        <a href="tulemused.html">Tulemused</a>
+                        <div onclick="document.getElementById('leht').setAttribute('data'. 'http://ehaaletus.azurewebsites.net/tulemused.html')">
+                        Tulemused
+                        </div>
                     </li>
                     <li>
                         <a href="statistika.html">Statistika</a>
@@ -91,6 +95,7 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, lacus vitae sollicitudin varius, tellus neque pharetra diam, posuere pharetra sapien sapien non tellus. Fusce nec laoreet neque, non ullamcorper mi. Fusce ac sem nulla. Sed quis ante at felis elementum ornare faucibus sed mauris. Mauris sodales tempus nisl, quis convallis massa aliquam vitae. Cras finibus erat feugiat, consequat lacus eu, posuere ligula. Suspendisse lectus libero, consectetur vel tellus ac, tristique egestas ex.
                 </p>
+               <object type="text/html" id="leht" data="http://ehaaletus.azurewebsites.net/statistika.html"></object>
             </article>
 
         </section>
