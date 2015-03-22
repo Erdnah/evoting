@@ -75,7 +75,7 @@
                 </table>
                  <table>
                     <tr>
-                        <th>Partei/th>
+                        <th>Partei</th>
                         <th>Hääli</th>
                         
                     </tr>
