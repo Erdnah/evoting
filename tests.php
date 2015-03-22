@@ -8,33 +8,19 @@
     <body>
         <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/modernizr.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript" charset="utf-8">
-			$(document).ready(function() {
-				$("ul#tabs li").click(function(e) {
-					if (!$(this).hasClass("active")) {
-						var tabNum = $(this).index();
-						var nthChild = tabNum + 1;
-						$("ul#tabs li.active").removeClass("active");
-						$(this).addClass("active");
-						$("ul#tab li.active").removeClass("active");
-						$("ul#tab li:nth-child(" + nthChild + ")").addClass("active");
-					}
-				});
-			});
-
-        </script>
+        <script src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
         <ul id="tabs">
             <li class="active">
-                Tab 1
+                Avaleht
             </li>
             <li>
-                Tab 2
+                Kandidaadid
             </li>
             <li>
-                Tab 3
+                Tulemused
             </li>
             <li>
-                Tab 4
+                Minu andmed
             </li>
             <li>
                 Tab 5
@@ -45,7 +31,25 @@
                 <h2>This is the first tab</h2>
             </li>
             <li>
-                <h2>This is the second tab</h2>
+                <h2>Kandidaatide tabel</h2>
+                <table>
+                    <tr>
+                        <th>Perenimi</th>
+                        <th>Esinimi</th>
+                        <th>Aadress</th>
+                    </tr>
+
+                    <?php
+                    include_once 'taskmodel.php';
+
+                    foreach (getAllPersons() as $value) {
+                    echo "
+                    <tr>
+                        <td>$value[1]</td>" . "<td>$value[2]</td>" . "<td>$value[3]</td>
+                    </tr>";
+                    }
+                    ?>
+                </table>
             </li>
             <li>
                 <h2>Tab number three wee hee</h2>
