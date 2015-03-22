@@ -40,16 +40,17 @@
                 <h2>Kandidaatide tabel</h2>
                 <table>
                     <tr>
-                        <th>Perenimi</th>
-                        <th>Esinimi</th>
-                        <th>Aadress</th>
+                        <th>Number</th>
+                        <th>Nimi</th>
+                        <th>Linn</th>
+                        <th>Partei</th>
                     </tr>
 
                    <?php
                     include_once 'taskmodel.php';
 
                     foreach (getAllPersons() as $value) {
-                        echo "<tr><td>$value[1]</td>" . "<td>$value[2]</td>" . "<td>$value[3]</td></tr>";
+                        echo "<tr><td>$value[0]</td>" . "<td>$value[1]</td>". "<td>$value[2]</td>" . "<td>$value[3]</td></tr>";
                     }
                     ?>
                 </table>
