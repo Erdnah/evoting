@@ -57,21 +57,22 @@
             <li>
                 <h2>Tulemused</h2>
                 <ul id="tabs">
-                    <li class="active">
-                        Kandidaatie järgi
-                    </li>
-                    <li>
-                        Parteide järgi
-                    </li>
-                </ul>
-                <ul id="tab">
-                    <li class="active">
-                        kandidaatide j'rgi siia
-                    </li>
-                <ul id="tab">
-                    <li>
-                        parteide j'rgi siia
-                    </li>
+            <li class="active">
+                Avaleht
+            </li>
+            <li>
+                Kandidaadid
+            </li>
+            <li>
+                Tulemused
+            </li>
+            <li>
+                Minu andmed
+            </li>
+            <li id= "logi">
+                Logi sisse
+            </li>
+        </ul>
             </li>
             <li>
                 <h2>Minu andmed</h2>
