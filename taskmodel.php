@@ -42,7 +42,7 @@ function markItemComplete($item_id)
 function getAllPersons()
 {
 	$conn = connect();
-	$sql = "SELECT * FROM persons";
+	$sql = "SELECT * FROM kandidaadid ORDER BY Number";
 	$stmt = $conn->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
