@@ -3,12 +3,17 @@ function statusChangeCallback(response) {
 		getInfo();
 		document.getElementById('logi').innerHTML = 'Logi välja';
 		document.getElementById('logi2').innerHTML = 'Väljalogimine';
-		window.location = "http://ehaaletus.azurewebsites.net/index.php";
 	} else if (response.status === 'not_authorized') {
 		document.getElementById('status').innerHTML = 'Andmete nägemiseks pead olema Facebooki logitud.';
 	} else {
 		document.getElementById('status').innerHTML = 'Palun logi Facebooki, et oma andmeid näha.';
 	}
+}
+
+function checkLoginState() {
+	FB.getLoginStatus(function(response) {
+		statusChangeCallback(response);
+	});
 }
 
 function getInfo() {
