@@ -53,7 +53,7 @@
                     </li>
                     <li>
                         <div onclick="document.getElementById('leht').setAttribute('data'. 'http://ehaaletus.azurewebsites.net/tulemused.html')">
-                        Tulemused
+                            Tulemused
                         </div>
                     </li>
                     <li>
@@ -68,6 +68,13 @@
                             <ul>
                                 <li align="center">
                                     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+                                    <span id="signinButton"> <span
+                                        class="g-signin"
+                                        data-callback="signinCallback"
+                                        data-clientid="1058368909645-5npc8vhar19pkqv4abs22t10gs7i730u.apps.googleusercontent.com"
+                                        data-cookiepolicy="single_host_origin"
+                                        data-requestvisibleactions="http://schema.org/AddAction"
+                                        data-scope="https://www.googleapis.com/auth/plus.login"> </span> </span>
                                 </li>
                             </ul>
                         </div>
@@ -82,20 +89,12 @@
 
             <h2>Tere tulemast e-hääletuse leheküljele!!</h2>
 
-            <span id="signinButton"> <span
-                class="g-signin"
-                data-callback="signinCallback"
-                data-clientid="1058368909645-5npc8vhar19pkqv4abs22t10gs7i730u.apps.googleusercontent.com"
-                data-cookiepolicy="single_host_origin"
-                data-requestvisibleactions="http://schema.org/AddAction"
-                data-scope="https://www.googleapis.com/auth/plus.login"> </span> </span>
-
             <article>
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, lacus vitae sollicitudin varius, tellus neque pharetra diam, posuere pharetra sapien sapien non tellus. Fusce nec laoreet neque, non ullamcorper mi. Fusce ac sem nulla. Sed quis ante at felis elementum ornare faucibus sed mauris. Mauris sodales tempus nisl, quis convallis massa aliquam vitae. Cras finibus erat feugiat, consequat lacus eu, posuere ligula. Suspendisse lectus libero, consectetur vel tellus ac, tristique egestas ex.
                 </p>
-               <object type="text/html" id="leht" data="http://ehaaletus.azurewebsites.net/statistika.html"></object>
+                <object type="text/html" id="leht" data="http://ehaaletus.azurewebsites.net/statistika.html"></object>
             </article>
 
         </section>
