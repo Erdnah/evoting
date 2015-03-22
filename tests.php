@@ -59,9 +59,10 @@
                 <h2>Kandidaatide tabel</h2>
                 <table>
                     <tr>
-                        <th>Perenimi</th>
-                        <th>Esinimi</th>
-                        <th>Aadress</th>
+                        <th>Number</th>
+                        <th>Nimi</th>
+                        <th>Linn</th>
+                        <th>Partei</th>
                     </tr>
 
                    <?php
