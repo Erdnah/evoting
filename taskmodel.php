@@ -46,6 +46,20 @@ function getAllPersons()
 	$stmt = $conn->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
+function getAllPartys()
+{
+	$conn = connect();
+	$sql = "SELECT * FROM tulem_partei ORDER BY Tulemus";
+	$stmt = $conn->query($sql);
+	return $stmt->fetchAll(PDO::FETCH_NUM);
+}
+function getAllScores()
+{
+	$conn = connect();
+	$sql = "SELECT * FROM tulem_kandid ORDER BY skoor";
+	$stmt = $conn->query($sql);
+	return $stmt->fetchAll(PDO::FETCH_NUM);
+}
 
 function addPeron($lastName, $firstName, $address, $city)
 {
