@@ -10,26 +10,7 @@
         <script src="js/modernizr.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
-        <script>
-            function statusChangeCallback(response) {
-                if (response.status === 'connected') {
-                    getInfo();
-                    document.getElementById('logi').innerHTML = 'Logi välja';
-                } else if (response.status === 'not_authorized') {
-                    document.getElementById('status').innerHTML = 'Andmete nägemiseks pead olema Facebooki logitud.';
-                } else {
-                    document.getElementById('status').innerHTML = 'Palun logi Facebooki, et oma andmeid näha.';
-                }
-            }
-
-            function getInfo() {
-                FB.api('/me', function(response) {
-                    document.getElementById('firstName').innerHTML = 'Eesnimi: ' + response.first_name;
-                    document.getElementById('lastName').innerHTML = 'Perenimi: ' + response.last_name;
-                    document.getElementById('email').innerHTML = 'Email: ' + response.email;
-                });
-            }
-        </script>
+        <script src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
         
         <ul id="tabs">
             <li class="active">
@@ -50,7 +31,7 @@
         </ul>
         <ul id="tab">
             <li class="active">
-                <h2>Tere tulemast e-hääletuse lehele!</h2>
+                <h2 id="teretulemast">Tere tulemast e-hääletuse lehele!</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, lacus vitae sollicitudin varius, tellus neque pharetra diam, posuere pharetra sapien sapien non tellus. Fusce nec laoreet neque, non ullamcorper mi. Fusce ac sem nulla. Sed quis ante at felis elementum ornare faucibus sed mauris. Mauris sodales tempus nisl, quis convallis massa aliquam vitae. Cras finibus erat feugiat, consequat lacus eu, posuere ligula. Suspendisse lectus libero, consectetur vel tellus ac, tristique egestas ex.
                 </p>
@@ -85,7 +66,7 @@
                 <div id="email"></div>
             </li>
             <li>
-                <h2>Sisselogimine</h2>
+                <h2 id="logi2">Sisselogimine</h2>
                 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
             </li>
         </ul>
