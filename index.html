@@ -8,24 +8,7 @@
     </head>
 
     <body>
-        <script>
-			window.fbAsyncInit = function() {
-				FB.init({
-					appId : '1554949304755420',
-					xfbml : true,
-					version : 'v2.1'
-				});
-			}; ( function(d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) {
-						return;
-					}
-					js = d.createElement(s);
-					js.id = id;
-					js.src = "//connect.facebook.net/en_US/sdk.js";
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-        </script>
+        <script src="loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script src="https://apis.google.com/js/client:platform.js" async defer></script>
         <script>
 			function signinCallback(authResult) {
@@ -57,7 +40,7 @@
                         <div>
                             <ul>
                                 <li>
-                                    <a href="login.html">Google+</a>
+                                    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
                                 </li>
                             </ul>
                         </div>
