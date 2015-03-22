@@ -14,6 +14,7 @@
             function statusChangeCallback(response) {
                 if (response.status === 'connected') {
                     getInfo();
+                    document.getElementById('logi').innerHTML = 'Logi välja';
                 } else if (response.status === 'not_authorized') {
                     document.getElementById('status').innerHTML = 'Andmete nägemiseks pead olema Facebooki logitud.';
                 } else {
