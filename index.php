@@ -57,6 +57,22 @@
             </li>
             <li>
                 <h2>Tulemused</h2>
+                <table>
+                    <tr>
+                        <th>Number</th>
+                        <th>Perekonnanimi</th>
+                        <th>Eesnimi</th>
+                        <th>Hääli</th>
+                    </tr>
+
+                   <?php
+                    include_once 'taskmodel.php';
+
+                    foreach (getAllScores() as $value) {
+                        echo "<tr><td>$value[0]</td>" . "<td>$value[1]</td>". "<td>$value[2]</td>" . "<td>$value[3]</td></tr>";
+                    }
+                    ?>
+                </table>
                 
             </li>
             <li>
