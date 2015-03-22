@@ -56,23 +56,7 @@
             </li>
             <li>
                 <h2>Tulemused</h2>
-                <ul id="tabs">
-            <li class="active">
-                Avaleht
-            </li>
-            <li>
-                Kandidaadid
-            </li>
-            <li>
-                Tulemused
-            </li>
-            <li>
-                Minu andmed
-            </li>
-            <li id= "logi">
-                Logi sisse
-            </li>
-        </ul>
+                
             </li>
             <li>
                 <h2>Minu andmed</h2>
