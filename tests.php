@@ -68,7 +68,7 @@
                     include_once 'taskmodel.php';
 
                     foreach (getAllPersons() as $value) {
-                        echo "<tr><td>$value[1]</td>" . "<td>$value[2]</td>" . "<td>$value[3]</td></tr>";
+                        echo "<tr><td>$value[0]</td>" . "<td>$value[1]</td>" . "<td>$value[2]</td></tr>" . "<td>$value[3]</td>";
                     }
                     ?>
                 </table>
