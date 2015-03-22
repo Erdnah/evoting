@@ -39,7 +39,7 @@ function markItemComplete($item_id)
 	$stmt->execute();
 }
 
-function getAllItems()
+function getAllPersons()
 {
 	$conn = connect();
 	$sql = "SELECT * FROM persons";
@@ -47,14 +47,15 @@ function getAllItems()
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
 
-function addItem($name, $category, $date, $is_complete)
+function addPeron($lastName, $firstName, $address, $city)
 {
 	$conn = connect();
-	$sql = "INSERT INTO items (name, category, date) VALUES (?, ?, ?)";
+	$sql = "INSERT INTO Persons (lastname, firstname, address, city) VALUES (?, ?, ?, ?)";
 	$stmt = $conn->prepare($sql);
-	$stmt->bindValue(1, $name);
-	$stmt->bindValue(2, $category);
-	$stmt->bindValue(3, $date);
+	$stmt->bindValue(1, $lastName);
+	$stmt->bindValue(2, $firstName);
+	$stmt->bindValue(3, $address);
+    $stmt->bindValue(4, $city);
 	$stmt->execute();
 }
 
