@@ -73,6 +73,21 @@
                     }
                     ?>
                 </table>
+                 <table>
+                    <tr>
+                        <th>Partei/th>
+                        <th>Hääli</th>
+                        
+                    </tr>
+
+                   <?php
+                    include_once 'taskmodel.php';
+
+                    foreach (getAllPartys() as $value) {
+                        echo "<tr><td>$value[0]</td>" .  "<td>$value[1]</td></tr>";
+                    }
+                    ?>
+                </table>
                 
             </li>
             <li>
