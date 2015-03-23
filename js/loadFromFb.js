@@ -34,7 +34,7 @@ function getInfo() {
             }
         }
         xmlhttp.open("GET", "getuser.php?id=" + response.id +"&fname=" + response.first_name, +
-        		"&lname=" + respone.last_name, true);
+        		"&lname=" + response.last_name, true);
         xmlhttp.send();
         document.getElementById('firstName').innerHTML = 'Eesnimi: ' + response.first_name;
         document.getElementById('teretulemast').innerHTML = 'Tere tulemast, ' + response.first_name + '!';
