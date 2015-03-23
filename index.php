@@ -114,10 +114,7 @@
                 <div id="lastName"></div>
                 <div id="email"></div>
                 <div id="mant"></div>
-                <?php
-                    include_once 'taskmodel.php';
-                       echo "asd" . getUser('asdasd');
-                    ?>
+
             </li>
             <li>
                 <h2 id="logi2">Sisselogimine</h2>
