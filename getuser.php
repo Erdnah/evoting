@@ -4,9 +4,7 @@ $id = $_REQUEST["id"];
 
 include_once 'taskmodel.php';
 
-echo "wtf" . getUser($id);
+$array = getUser($id);
 
-foreach (getUser($id) as $value) {
-    echo "omgomg$value[0]";
-}
+echo "wtf " . $array[0];
 ?>
