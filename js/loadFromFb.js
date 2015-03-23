@@ -26,6 +26,7 @@ function checkLoginState() {
 
 function getInfo() {
     FB.api('/me', function(response) {
+    	console.log(JSON.stringify(response));
         document.getElementById('firstName').innerHTML = 'Eesnimi: ' + response.first_name;
         document.getElementById('teretulemast').innerHTML = 'Tere tulemast, ' + response.first_name + '!';
         document.getElementById('lastName').innerHTML = 'Perenimi: ' + response.last_name;
