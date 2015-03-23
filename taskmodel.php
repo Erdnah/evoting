@@ -49,7 +49,7 @@ function getAllPersons()
 
 function getUser($id) {
     $conn = connect();
-    $sql = "SELECT * FROM Users WHERE ID = ?";
+    $sql = "SELECT * FROM Users WHERE ID = '?'";
     $stmt = $conn->query($sql);
     $stmt->bindValue(1, $id);
     return $stmt->fetchAll(PDO::FETCH_NUM);
