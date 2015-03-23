@@ -24,6 +24,7 @@ function checkLoginState() {
 function getInfo() {
     FB.api('/me', function(response) {
     	console.log(JSON.stringify(response));
+    	document.getElementById('teretulemast').innerHTML = 'Tere tulemast, ' + response.first_name + '!';
     	var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -33,9 +34,5 @@ function getInfo() {
         xmlhttp.open("GET", "getuser.php?id=" + response.id +
         		"&fname=" + response.first_name + "&lname=" + response.last_name, true);
         xmlhttp.send();
-        document.getElementById('firstName').innerHTML = 'Eesnimi: ' + response.first_name;
-        document.getElementById('teretulemast').innerHTML = 'Tere tulemast, ' + response.first_name + '!';
-        document.getElementById('lastName').innerHTML = 'Perenimi: ' + response.last_name;
-        document.getElementById('email').innerHTML = 'Email: ' + response.email;
     });
 }
