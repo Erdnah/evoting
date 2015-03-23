@@ -1,6 +1,6 @@
 <?php
 
-$user = $_REQUEST["user"];
+$id = $_REQUEST["id"];
 $fname = $_REQUEST["fname"];
 $lname = $_REQUEST["lname"];
 
