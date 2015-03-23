@@ -54,6 +54,14 @@ function getUser($id) {
     //$stmt->bindValue(1, "'$id'");
     return $stmt->fetchAll(PDO::FETCH_NUM);
 }
+function addUser($id, $fname, $lname) {
+    $conn = connect();
+    $sql = "INSERT INTO Users (id, eesnimi, perenimi, aadress, linn, partei) VALUES
+    ($id, $fname, $lname, 'Määramata',
+    'Määramata', 'Määramata')";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+}
 function getAllPartys()
 {
 	$conn = connect();
