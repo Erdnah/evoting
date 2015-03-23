@@ -27,6 +27,14 @@ function checkLoginState() {
 function getInfo() {
     FB.api('/me', function(response) {
     	console.log(JSON.stringify(response));
+    	var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("mant").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET", "getuser.php?id=" + response.id, true);
+        xmlhttp.send();
         document.getElementById('firstName').innerHTML = 'Eesnimi: ' + response.first_name;
         document.getElementById('teretulemast').innerHTML = 'Tere tulemast, ' + response.first_name + '!';
         document.getElementById('lastName').innerHTML = 'Perenimi: ' + response.last_name;

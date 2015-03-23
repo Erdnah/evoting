@@ -113,6 +113,7 @@
                 <div id="firstName"></div>
                 <div id="lastName"></div>
                 <div id="email"></div>
+                <div id="mant"></div>
             </li>
             <li>
                 <h2 id="logi2">Sisselogimine</h2>

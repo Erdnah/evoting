@@ -46,6 +46,14 @@ function getAllPersons()
 	$stmt = $conn->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
+
+function getUser($id) {
+    $conn = connect();
+    $sql = "SELECT * FROM Users WHERE ID = ?";
+    $stmt = $conn->query($sql);
+    $stmt->bindValue(1, $id);
+    return $stmt->fetchAll(PDO::FETCH_NUM);
+}
 function getAllPartys()
 {
 	$conn = connect();
