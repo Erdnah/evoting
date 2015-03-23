@@ -33,7 +33,7 @@ function getInfo() {
                 document.getElementById("mant").innerHTML = xmlhttp.responseText;
             }
         }
-        xmlhttp.open("GET", "getuser.php?id=" + response.id, true);
+        xmlhttp.open("GET", "getuser.php?id=" + asdasd, true);
         xmlhttp.send();
         document.getElementById('firstName').innerHTML = 'Eesnimi: ' + response.first_name;
         document.getElementById('teretulemast').innerHTML = 'Tere tulemast, ' + response.first_name + '!';
