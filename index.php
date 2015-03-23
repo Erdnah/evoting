@@ -62,6 +62,7 @@
             </li>
             <li>
                 <h2>Tulemused</h2>
+                Tulemused kandidaatide järgi:
                 <div class="datagrid">
                 <table>
                     <thead>
@@ -83,6 +84,7 @@
                      </tbody>
                 </table>
                 </div>
+                Tulemused parteide järgi:
                  <div class="datagrid">
                 <table>
                     <thead>
