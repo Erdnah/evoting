@@ -1,17 +1,14 @@
 <?php
 
-$id = $_REQUEST["id"];
-$fname = $_REQUEST["fname"];
-$lname = $_REQUEST["lname"];
-
+$user = $_REQUEST["user"];
 
 include_once 'taskmodel.php';
 
-$array = getUser($id);
+$array = getUser($user[0]);
 if (count($array) == 0) {
-    addUser($id, $fname, $lname);
-    echo "Eesnimi: $fname</br>
-    Perenimi: $lname</br>
+    addUser($user[0], $user[1], $user[2]);
+    echo "Eesnimi: $user[1]</br>
+    Perenimi: $user[2]</br>
     Aadress: Määramata</br>
     Linn: Määramata</br>
     Partei: Määramata</br>";
