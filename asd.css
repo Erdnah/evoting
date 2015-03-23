@@ -39,3 +39,49 @@ ul#tab li h2 {
 	padding-bottom: 5px;
 	border-bottom: solid 5px #32c896;
 }
+.datagrid table {
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+}
+.datagrid {
+	font: normal 12px/150% Arial, Helvetica, sans-serif;
+	background: #fff;
+	overflow: hidden;
+	border: 1px solid #52854E;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.datagrid table td, .datagrid table th {
+	padding: 3px 10px;
+}
+.datagrid table thead th {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #52854E), color-stop(1, #81B87D) );
+	background: -moz-linear-gradient( center top, #52854E 5%, #81B87D 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#52854E', endColorstr='#81B87D');
+	background-color: #52854E;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	border-left: 1px solid #52854E;
+}
+.datagrid table thead th:first-child {
+	border: none;
+}
+.datagrid table tbody td {
+	color: #000000;
+	border-left: 1px solid #E1EEF4;
+	font-size: 12px;
+	font-weight: normal;
+}
+.datagrid table tbody .alt td {
+	background: #E1EEF4;
+	color: #615055;
+}
+.datagrid table tbody td:first-child {
+	border-left: none;
+}
+.datagrid table tbody tr:last-child td {
+	border-bottom: none;
+}

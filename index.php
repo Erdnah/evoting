@@ -38,14 +38,17 @@
             </li>
             <li>
                 <h2>Kandidaatide tabel</h2>
+                <div class="datagrid">
                 <table>
+                    <thead>
                     <tr>
                         <th>Number</th>
                         <th>Nimi</th>
                         <th>Linn</th>
                         <th>Partei</th>
                     </tr>
-
+                    </thead>
+                    <tbody>
                    <?php
                     include_once 'taskmodel.php';
 
@@ -53,7 +56,9 @@
                         echo "<tr><td>$value[0]</td>" . "<td>$value[1]</td>". "<td>$value[2]</td>" . "<td>$value[3]</td></tr>";
                     }
                     ?>
+                    </tbody>
                 </table>
+                <div>
             </li>
             <li>
                 <h2>Tulemused</h2>
