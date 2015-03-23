@@ -110,9 +110,6 @@
                 <h2>Minu andmed</h2>
                 <div id="status"></div>
 
-                <div id="firstName"></div>
-                <div id="lastName"></div>
-                <div id="email"></div>
                 <div id="mant"></div>
 
             </li>

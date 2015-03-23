@@ -10,10 +10,7 @@ function statusChangeCallback(response) {
 		document.getElementById('status').innerHTML = 'Palun logi Facebooki, et oma andmeid näha.';
 		document.getElementById('logi').innerHTML = 'Logi sisse';
 		document.getElementById('logi2').innerHTML = 'Sisselogimine';
-		document.getElementById('firstName').innerHTML = '';
-        document.getElementById('teretulemast').innerHTML = '';
-        document.getElementById('lastName').innerHTML = '';
-        document.getElementById('email').innerHTML = '';
+		document.getElementById('mant').innerHTML = '';
         document.getElementById('teretulemast').innerHTML = 'Tere tulemast e-hääletuse lehele!';
 	}
 }
