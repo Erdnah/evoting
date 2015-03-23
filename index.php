@@ -116,7 +116,7 @@
             </li>
             <li>
                 <h2 id="logi2">Sisselogimine</h2>
-                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+                <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
             </li>
         </ul>
     </body>
