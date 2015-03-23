@@ -116,7 +116,7 @@
                 <div id="mant"></div>
                 <?php
                     include_once 'taskmodel.php';
-                       echo getUser('asdasd');
+                       echo "asd" . getUser('asdasd');
                     ?>
             </li>
             <li>
