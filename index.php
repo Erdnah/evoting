@@ -62,14 +62,17 @@
             </li>
             <li>
                 <h2>Tulemused</h2>
+                <div class="datagrid">
                 <table>
+                    <thead>
                     <tr>
                         <th>Number</th>
                         <th>Perekonnanimi</th>
                         <th>Eesnimi</th>
                         <th>Hääli</th>
                     </tr>
-
+                    </thead>
+                     <tbody>
                    <?php
                     include_once 'taskmodel.php';
 
@@ -77,14 +80,19 @@
                         echo "<tr><td>$value[2]</td>" . "<td>$value[0]</td>". "<td>$value[1]</td>" . "<td>$value[3]</td></tr>";
                     }
                     ?>
+                     </tbody>
                 </table>
-                 <table>
+                </div>
+                 <div class="datagrid">
+                <table>
+                    <thead>
                     <tr>
                         <th>Partei</th>
                         <th>Hääli</th>
                         
                     </tr>
-
+                    </thead>
+                    <tbody>
                    <?php
                     include_once 'taskmodel.php';
 
@@ -92,8 +100,9 @@
                         echo "<tr><td>$value[0]</td>" .  "<td>$value[1]</td></tr>";
                     }
                     ?>
+                    </tbody>
                 </table>
-                
+                </div>
             </li>
             <li>
                 <h2>Minu andmed</h2>
