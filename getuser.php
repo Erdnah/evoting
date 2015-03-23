@@ -9,7 +9,7 @@ include_once 'taskmodel.php';
 
 $array = getUser($id);
 if (count($array) == 0) {
-    //addUser($id, $fname, $lname);
+    addUser($id, $fname, $lname);
     echo "Eesnimi: $fname</br>
     Perenimi: $lname</br>
     Aadress: Määramata</br>

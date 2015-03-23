@@ -57,7 +57,7 @@ function getUser($id) {
 function addUser($id, $fname, $lname) {
     $conn = connect();
     $sql = "INSERT INTO Users (id, eesnimi, perenimi, aadress, linn, partei) VALUES
-    ($id, $fname, $lname, 'Määramata',
+    ('$id', '$fname', '$lname', 'Määramata',
     'Määramata', 'Määramata')";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
