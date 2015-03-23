@@ -33,9 +33,9 @@ function getInfo() {
                 document.getElementById("mant").innerHTML = xmlhttp.responseText;
             }
         }
-        xmlhttp.open("GET", "getuser.php?id=" + response.id +"&fname=" + response.first_name +
-        		"&lname=" + response.last_name, true);
-        xmlhttp.send();
+        xmlhttp.open("GET", "getuser.php", true);
+        xmlhttp.send("id=" + response.id +"&fname=" + response.first_name +
+    		"&lname=" + response.last_name);
         document.getElementById('firstName').innerHTML = 'Eesnimi: ' + response.first_name;
         document.getElementById('teretulemast').innerHTML = 'Tere tulemast, ' + response.first_name + '!';
         document.getElementById('lastName').innerHTML = 'Perenimi: ' + response.last_name;
