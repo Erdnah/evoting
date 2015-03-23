@@ -5,7 +5,14 @@ function statusChangeCallback(response) {
 		document.getElementById('logi2').innerHTML = 'Väljalogimine';
 		document.getElementById('status').innerHTML = '';
 	} else if (response.status === 'not_authorized') {
+		document.getElementById('logi').innerHTML = 'Logi sisse';
+		document.getElementById('logi2').innerHTML = 'Sisselogimine';
 		document.getElementById('status').innerHTML = 'Andmete nägemiseks pead olema Facebooki logitud.';
+		document.getElementById('firstName').innerHTML = '';
+        document.getElementById('teretulemast').innerHTML = '';
+        document.getElementById('lastName').innerHTML = '';
+        document.getElementById('email').innerHTML = '';
+        document.getElementById('teretulemast').innerHTML = 'Tere tulemast e-hääletuse lehele!';
 	} else {
 		document.getElementById('status').innerHTML = 'Palun logi Facebooki, et oma andmeid näha.';
 	}
