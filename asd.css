@@ -1,43 +1,64 @@
-ul#tabs {
-	list-style-type: none;
-	margin: 0 0 30px 0;
-	padding: 0;
-	text-align: center;
-}
-ul#tabs li {
+/*----- Tabs -----*/
+.tabs {
+	width: 100%;
 	display: inline-block;
-	background-color: #32c896;
-	border-bottom: solid 5px #238b68;
-	padding: 5px 20px;
-	margin-bottom: 4px;
-	color: #fff;
-	cursor: pointer;
-}
-ul#tabs li:hover {
-	background-color: #238b68;
-}
-ul#tabs li.active {
-	background-color: #238b68;
 }
 
-ul#tab {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-ul#tab li {
-	display: none;
-	padding: 30px;
-	border: solid 20px #d2f4e9;
-}
-ul#tab li.active {
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
 	display: block;
+	clear: both;
+	content: '';
 }
-ul#tab li h2 {
+
+.tab-links li {
+	margin: 0px 5px;
+	float: left;
+	list-style: none;
+}
+
+.tab-links a {
+	padding: 9px 15px;
+	display: inline-block;
+	border-radius: 3px 3px 0px 0px;
+	background: #7FB5DA;
+	font-size: 16px;
+	font-weight: 600;
+	color: #4c4c4c;
+	transition: all linear 0.15s;
+}
+
+.tab-links a:hover {
+	background: #a7cce5;
+	text-decoration: none;
+}
+
+li.active a, li.active a:hover {
+	background: #fff;
+	color: #4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding: 15px;
+	border-radius: 3px;
+	box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+	background: #fff;
+}
+.tab-content h2{
 	font-weight: 400;
 	margin-bottom: 30px;
 	padding-bottom: 5px;
 	border-bottom: solid 5px #32c896;
+}
+
+.tab {
+	display: none;
+}
+
+.tab.active {
+	display: block;
 }
 .datagrid table {
 	border-collapse: collapse;
