@@ -12,23 +12,6 @@
         <script src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
         
-        <ul id="tabs">
-            <li class="active">
-                Avaleht
-            </li>
-            <li>
-                Kandidaadid
-            </li>
-            <li>
-                Tulemused
-            </li>
-            <li>
-                Minu andmed
-            </li>
-            <li id= "logi">
-                Logi sisse
-            </li>
-        </ul>
         <div class="tabs">
             <ul class="tab-links">
                 <li class="active"><a href="#tab1">Avaleht</a></li>
