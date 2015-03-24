@@ -12,24 +12,31 @@
         <script src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
         
-        <div class="tabs">
-            <ul class="tab-links">
-                <li class="active"><a href="#tab1">Avaleht</a></li>
-                <li><a href="#tab2">Kandidaadid</a></li>
-                <li><a href="#tab3">Tulemused</a></li>
-                <li><a href="#tab4">Minu andmed</a></li>
-                <li><a href="#tab5">Logi sisse</a></li>
-            </ul>
-        </div>
-        <div class="tab-content">
-            <div id="tab1" class="tab active">
+        <ul id="tabs">
+            <li class="active">
+                Avaleht
+            </li>
+            <li>
+                Kandidaadid
+            </li>
+            <li>
+                Tulemused
+            </li>
+            <li>
+                Minu andmed
+            </li>
+            <li id= "logi">
+                Logi sisse
+            </li>
+        </ul>
+        <ul id="tab">
+            <li class="active">
                 <h2 id="teretulemast">Tere tulemast e-hääletuse lehele!</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum, lacus vitae sollicitudin varius, tellus neque pharetra diam, posuere pharetra sapien sapien non tellus. Fusce nec laoreet neque, non ullamcorper mi. Fusce ac sem nulla. Sed quis ante at felis elementum ornare faucibus sed mauris. Mauris sodales tempus nisl, quis convallis massa aliquam vitae. Cras finibus erat feugiat, consequat lacus eu, posuere ligula. Suspendisse lectus libero, consectetur vel tellus ac, tristique egestas ex.
                 </p>
-            </div>
- 
-            <div id="tab2" class="tab">
+            </li>
+            <li>
                 <h2>Kandidaatide tabel</h2>
                 <div class="datagrid">
                 <table>
@@ -52,9 +59,8 @@
                     </tbody>
                 </table>
                 <div>
-            </div>
- 
-            <div id="tab3" class="tab">
+            </li>
+            <li>
                 <h2>Tulemused</h2>
                 Tulemused kandidaatide järgi:
                 <div class="datagrid">
@@ -99,18 +105,18 @@
                     </tbody>
                 </table>
                 </div>
-            </div>
- 
-            <div id="tab4" class="tab">
+            </li>
+            <li>
                 <h2>Minu andmed</h2>
                 <div id="status"></div>
 
                 <div id="mant"></div>
-            </div>
-            <div id="tab5" class="tab">
+
+            </li>
+            <li>
                 <h2 id="logi2">Sisselogimine</h2>
                 <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
-            </div>
-        </div>
+            </li>
+        </ul>
     </body>
 </html>
