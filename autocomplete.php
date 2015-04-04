@@ -1,6 +1,6 @@
 <?php
 // contains utility functions mb_stripos_all() and apply_highlight()
-require_once 'local_utils.php';
+require_once '../../Desktop/local_utils.php';
  
 // prevent direct access
 $isAjax = isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND
@@ -16,18 +16,8 @@ $term = trim($_GET['term']);
 $a_json = array();
 $a_json_row = array();
  
-$a_json_invalid = array(array("id" => $term, "label" => "Only letters and digits are permitted..."));
-$json_invalid = json_encode($a_json_invalid);
- 
-// replace multiple spaces with one
-$term = preg_replace('/\s+/', ' ', $term);
- 
-// SECURITY HOLE ***************************************************************
-// allow space, any unicode letter and digit, underscore and dash
-if(preg_match("/[^\040\pL\pN_-]/u", $term)) {
-  print $json_invalid;
-  exit;
-}
+
+
 // *****************************************************************************
  
 // database connection
@@ -46,7 +36,7 @@ $p = count($parts);
 /**
  * Create SQL
  */
-$sql = 'SELECT perenimi, eesnimi FROM kandidaadid WHERE';
+$sql = 'SELECT perenimi, eesnimi FROM kandidaadid';
 for($i = 0; $i < $p; $i++) {
   $sql .= ' AND perenimi LIKE ' . "'%" . $conn->real_escape_string($parts[$i]) . "%'";
 }
@@ -63,8 +53,7 @@ while($row = $rs->fetch_assoc()) {
   array_push($a_json, $a_json_row);
 }
  
-// highlight search results
-$a_json = apply_highlight($a_json, $parts);
+
  
 $json = json_encode($a_json);
 print $json;
