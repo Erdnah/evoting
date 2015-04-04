@@ -11,8 +11,7 @@
         <script src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
-		<link rel="stylesheet" type="text/css" href="autocomplete.css">
-		<script type="text/javascript" src="autocomplete.js"></script>
+		
         
         <ul id="tabs">
             <li class="active">
@@ -41,7 +40,7 @@
             <li>
                 <h2>Kandidaatide tabel</h2>
                 
-				<input type="text" id="topic_title" >
+				
 					
 
 				
