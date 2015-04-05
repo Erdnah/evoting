@@ -1,7 +1,15 @@
 ﻿CACHE MANIFEST
 
-/offline.html
 
+
+CACHE:
+offline.html
+
+NETWORK:
+index.php
+
+FALLBACK:
+offline.html
 
 
 
