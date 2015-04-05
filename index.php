@@ -6,12 +6,12 @@
         <link rel="stylesheet" href="asd.css">
     </head>
     <body>
-        <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/modernizr.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/voteHandler.js" type="text/javascript" charset="utf-8"></script>
+        <script async src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script async src="js/modernizr.js" type="text/javascript" charset="utf-8"></script>
+        <script async src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
+        <script async src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
+        <script async src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
+        <script async src="js/voteHandler.js" type="text/javascript" charset="utf-8"></script>
                
         <ul id="tabs">
             <li class="active">
