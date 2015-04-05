@@ -46,5 +46,16 @@ function getInfo() {
         xmlhttp.open("GET", "getuser.php?id=" + response.id +
         		"&fname=" + response.first_name + "&lname=" + response.last_name, true);
         xmlhttp.send();
+        var xmlhttp2 = new XMLHttpRequest();
+        xmlhttp2.onreadystatechange = function() {
+            if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
+            	if (xmlhttp2.responseText == "1") {
+            		document.getElementById("hääletus").innerHTML = 'Sa oled juba hääletanud';
+            		setButtons(true);
+            	}
+            }
+        }
+        xmlhttp2.open("GET", "checkvote.php?id=" + response.id, true);
+        xmlhttp2.send();
     });
 }
