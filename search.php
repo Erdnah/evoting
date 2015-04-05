@@ -2,13 +2,29 @@
 
 
 
+	
+$server = "tcp:vzwses3zoj.database.windows.net";
+$user = "evoting@vzwses3zoj";
+$pwd = "Salasona123";
+$db = "evoting";
+try{
+	$conn = new PDO( "sqlsrv:Server= $server ; Database = $db ", $user, $pwd);
+	$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+}
+catch(Exception $e){
+	die(print_r($e));
+}
+	
+
 
 if($_POST)
 {
-include('db.php');
+
 $q=$_POST['search'];
-$sql_res=mysql_query("select LastName, FirstName from Persons where LastName like '%$q%' or FirstName like '%$q%' order by id LIMIT 5");
-while($row=mysql_fetch_array($sql_res))
+$sql = "select LastName, FirstName from Persons where LastName like '%$q%' or FirstName like '%$q%' order by id LIMIT 5";
+$stmt = $conn->query($sql);
+
+while($row=$stmt->fetchAll(PDO::FETCH_NUM))
 {
 $perenimi=$row['LastName'];
 $eesnimi=$row['FirstName'];
