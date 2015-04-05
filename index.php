@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="offlinesupport.appcache">
     <head>
         <meta charset="UTF-8">
         <title>E-hääletus</title>
@@ -11,6 +11,7 @@
         <script src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/update.js" type="text/javascript" charset="utf-8"></script>
         
 		
         
