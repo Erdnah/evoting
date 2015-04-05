@@ -36,6 +36,7 @@ function getInfo() {
     FB.api('/me', function(response) {
     	console.log(JSON.stringify(response));
     	document.getElementById('teretulemast').innerHTML = 'Tere tulemast, ' + response.first_name + '!';
+    	sessionStorage.id = response.id
     	var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
