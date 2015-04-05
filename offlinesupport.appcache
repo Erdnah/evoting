@@ -6,10 +6,10 @@ CACHE:
 offline.html
 
 NETWORK:
-index.php
+*
 
 FALLBACK:
-offline.html
+/ /offline.html
 
 
 
