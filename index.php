@@ -11,7 +11,7 @@
         <script src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
-         <script src="js/otsing.js" type="text/javascript" charset="utf-8"></script>
+        
 		
         
         <ul id="tabs">
@@ -68,10 +68,7 @@
                 <div>
                 
                 
-                <div class="content">
-				<input type="text" class="search" id="searchid" placeholder="Search for people" />				&nbsp; &nbsp; <br /> 
-				<div id="result"></div>
-  			    </div>
+               
                 
             </li>
            
