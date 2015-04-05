@@ -30,13 +30,13 @@ function connect()
 	return $conn;
 }
 
-function markItemComplete($item_id)
+function postVote($id)
 {
-	$conn = connect();
-	$sql = "UPDATE items SET is_complete = 1 WHERE id = ?";
-	$stmt = $conn->prepare($sql);
-	$stmt->bindValue(1, $item_id);
-	$stmt->execute();
+    $conn = connect();
+    $sql = "UPDATE votes SET is_complete = 1 WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindValue(1, $id);
+    $stmt->execute();
 }
 
 function getAllPersons()

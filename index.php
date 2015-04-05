@@ -11,10 +11,8 @@
         <script src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
-        
-        
-		
-        
+        <script src="js/voteHandler.js" type="text/javascript" charset="utf-8"></script>
+               
         <ul id="tabs">
             <li class="active">
                 Avaleht
@@ -61,7 +59,9 @@
                     include_once 'taskmodel.php';
 
                     foreach (getAllPersons() as $value) {
-                        echo "<tr><td>$value[0]</td>" . "<td>$value[1]</td>". "<td>$value[2]</td>" . "<td>$value[3]</td></tr>";
+                        echo "<tr><td>$value[0]</td>" . "<td>$value[1]</td>". "<td>$value[2]</td>" . 
+                        "<td>$value[3]</td>
+                        <td><button class=\"votebtn\" disabled type=\"button\" onclick=\"getId(this)\">Hääleta</button></td></tr>";
                     }
                     ?>
                     </tbody>

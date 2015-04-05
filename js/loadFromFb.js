@@ -4,6 +4,7 @@ function statusChangeCallback(response) {
 		document.getElementById('logi').innerHTML = 'Logi välja';
 		document.getElementById('logi2').innerHTML = 'Väljalogimine';
 		document.getElementById('status').innerHTML = '';
+		setButtons(false);
 	} else if (response.status === 'not_authorized') {
 		document.getElementById('status').innerHTML = 'Andmete nägemiseks pead olema Facebooki logitud.';		
 	} else {
@@ -12,6 +13,14 @@ function statusChangeCallback(response) {
 		document.getElementById('logi2').innerHTML = 'Sisselogimine';
 		document.getElementById('mant').innerHTML = '';
         document.getElementById('teretulemast').innerHTML = 'Tere tulemast e-hääletuse lehele!';
+        setButtons(true);
+	}
+}
+
+function setButtons(kasDisabled) {
+	var buttons = document.getElementsByClassName('votebtn');
+	for (i = 0; i<buttons.length; i++) {
+		buttons[i].disabled = kasDisabled;
 	}
 }
 
