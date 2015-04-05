@@ -1,6 +1,16 @@
 ﻿CACHE MANIFEST
-/index.php
-/styles.css
-/js/modernizr
-/js/update
-/js/tabs
+
+
+
+styles.css
+js/modernizr.js
+js/update.js
+js/tabs.js
+web.config
+js/jquery-1.9.1.min.js
+js/jquery-1.11.2.min.js
+asd.css
+
+
+
+
