@@ -1,8 +1,9 @@
 <?php
 
 $id = $_REQUEST["id"];
+$fbid = $_REQUEST["fbid"];
 
 include_once 'taskmodel.php';
-postVote($id);
+postVote($id, $fbid);
 
 ?>

@@ -7,6 +7,7 @@ function getId (element) {
             setButtons(false);
         }
     }
-    xmlhttp.open("GET", "postvote.php?id=" + id, true);
+    xmlhttp.open("GET", "postvote.php?id=" + id +
+    		"&fbid=" + sessionStorage.id, true);
     xmlhttp.send();
 }
