@@ -30,12 +30,12 @@ function connect()
 	return $conn;
 }
 
-function postVote($id)
+function postVote($id,$fbid)
 {
     $conn = connect();
-    $sql = "UPDATE votes SET is_complete = 1 WHERE id = ?";
+    $sql = "insert into votes(kellelt,kellele) values ('$fbid','$id')";
     $stmt = $conn->prepare($sql);
-    $stmt->bindValue(1, $id);
+    //$stmt->bindValue(1, $id);
     $stmt->execute();
 }
 
