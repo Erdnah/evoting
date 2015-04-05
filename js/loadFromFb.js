@@ -52,6 +52,8 @@ function getInfo() {
             	if (xmlhttp2.responseText == "1") {
             		document.getElementById("hääletus").innerHTML = 'Sa oled juba hääletanud';
             		setButtons(true);
+            	} else {
+            		document.getElementById("hääletus").innerHTML = 'Sa pole veel hääletanud.';
             	}
             }
         }
