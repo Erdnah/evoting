@@ -39,11 +39,9 @@
             </li>
             <li>
                 <h2>Kandidaatide tabel</h2>
-                
-				
-					
-
-				
+                <div id="hääletus">
+                  
+                </div>
                 <div class="datagrid">
                 <table>
                     <thead>
