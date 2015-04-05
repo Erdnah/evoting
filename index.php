@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="offlinesupport.appcache">
+<html>
     <head>
         <meta charset="UTF-8">
         <title>E-hääletus</title>
