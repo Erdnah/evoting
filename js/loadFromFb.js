@@ -53,7 +53,7 @@ function getInfo() {
             		document.getElementById("hääletus").innerHTML = 'Sa oled juba hääletanud';
             		setButtons(true);
             	} else {
-            		document.getElementById("hääletus").innerHTML = 'Sa pole veel hääletanud.';
+            		document.getElementById("hääletus").innerHTML = xmlhttp2.responseText;
             	}
             }
         }
