@@ -41,10 +41,7 @@
             <li>
                 <h2>Kandidaatide tabel</h2>
                 
-				<div class="content">
-				<input type="text" class="search" id="searchid" placeholder="Search for people" />				&nbsp; &nbsp; <br /> 
-				<div id="result"></div>
-  			    </div>
+				
 					
 
 				
@@ -69,7 +66,15 @@
                     </tbody>
                 </table>
                 <div>
+                
+                
+                <div class="content">
+				<input type="text" class="search" id="searchid" placeholder="Search for people" />				&nbsp; &nbsp; <br /> 
+				<div id="result"></div>
+  			    </div>
+                
             </li>
+           
             <li>
                 <h2>Tulemused</h2>
                 Tulemused kandidaatide järgi:
