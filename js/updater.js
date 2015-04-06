@@ -1,5 +1,9 @@
-updateKandidaadid();
-updatePartei();
+update();
+
+function update() {
+	updateKandidaadid();
+	updatePartei();
+}
 
 function updateKandidaadid() {
 	var xmlhttp = new XMLHttpRequest();

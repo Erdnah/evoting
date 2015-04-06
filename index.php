@@ -70,6 +70,7 @@
            
             <li>
                 <h2>Tulemused</h2>
+                <button type="button" onclick="update()">Uuenda</button>
                 Tulemused kandidaatide järgi:
                 <div class="datagrid">
                 <div id="kvotes"></div>
