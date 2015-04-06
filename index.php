@@ -12,6 +12,7 @@
         <script async src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/voteHandler.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/updater.js" type="text/javascript" charset="utf-8"></script>
                
         <ul id="tabs">
             <li class="active">
@@ -71,46 +72,12 @@
                 <h2>Tulemused</h2>
                 Tulemused kandidaatide järgi:
                 <div class="datagrid">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Number</th>
-                        <th>Perekonnanimi</th>
-                        <th>Eesnimi</th>
-                        <th>Hääli</th>
-                    </tr>
-                    </thead>
-                     <tbody>
-                   <?php
-                    include_once 'taskmodel.php';
-
-                    foreach (getAllScores() as $value) {
-                        echo "<tr><td>$value[2]</td>" . "<td>$value[0]</td>". "<td>$value[1]</td>" . "<td>$value[3]</td></tr>";
-                    }
-                    ?>
-                     </tbody>
-                </table>
+                <div id="kvotes"></div>
                 </div>
                 Tulemused parteide järgi:
-                 <div class="datagrid">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Partei</th>
-                        <th>Hääli</th>
-                        
-                    </tr>
-                    </thead>
-                    <tbody>
-                   <?php
-                    include_once 'taskmodel.php';
-
-                    foreach (getAllPartys() as $value) {
-                        echo "<tr><td>$value[0]</td>" .  "<td>$value[1]</td></tr>";
-                    }
-                    ?>
-                    </tbody>
-                </table>
+                 <div class="datagrid">               
+                   <div id="parteivotes">
+                   </div>         
                 </div>
             </li>
             <li>

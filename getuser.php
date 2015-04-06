@@ -23,7 +23,8 @@ if (count($array) == 0) {
     Perenimi: $a[2]</br>
     Aadress: $a[3]</br>
     Linn: $a[4]</br>
-    Partei: $a[5]</br>";
+    Partei: $a[5]</br>
+    Hääletanud $a[7]</br>";
     setVars($a[0], $a[1], $a[2], $a[3], $a[4], $a[5], $a[7]);
 }
 

@@ -5,6 +5,9 @@ function getId (element) {
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             setButtons(true);
+            updateKandidaadid();
+            updatePartei();
+            document.getElementById("hääletus").innerHTML = 'Sa oled juba hääletanud.';
         }
     }
     xmlhttp.open("GET", "postvote.php?id=" + id +

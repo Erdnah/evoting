@@ -33,7 +33,8 @@ function connect()
 function postVote($id,$fbid)
 {
     $conn = connect();
-    $sql = "insert into votes(kellelt,kellele) values ('$fbid','$id')";
+    $sql = "insert into votes(kellelt,kellele) values ('$fbid','$id');
+    update users set has_vote=1 where id='$fbid'";
     $stmt = $conn->prepare($sql);
     //$stmt->bindValue(1, $id);
     $stmt->execute();
