@@ -7,8 +7,9 @@ function getId (element) {
             setButtons(true);
             updateKandidaadid();
             updatePartei();
-            alert('Su hääl läks arvesse!');
             document.getElementById("hääletus").innerHTML = 'Sa oled juba hääletanud.';
+            alert('Su hääl läks arvesse!');
+            
         }
     }
     xmlhttp.open("GET", "postvote.php?id=" + id +
