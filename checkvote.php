@@ -1,12 +1,9 @@
 <?php
-
-$id = $_REQUEST["id"];
+session_start();
 
 include_once 'taskmodel.php';
 
-$array = getUser($id);
-echo "$array";
-if ($array[0][7] == 1) {
+if ($_SESSION['onvote'] == 1) {
     echo "1";
 } else {
     echo "0";

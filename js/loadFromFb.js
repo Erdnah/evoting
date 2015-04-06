@@ -5,7 +5,6 @@ function statusChangeCallback(response) {
 		document.getElementById('logi2').innerHTML = 'Väljalogimine';
 		document.getElementById('status').innerHTML = '';
 		document.getElementById('hääletus').innerHTML = '';
-		setButtons(false);
 	} else if (response.status === 'not_authorized') {
 		document.getElementById('status').innerHTML = 'Andmete nägemiseks pead olema Facebooki logitud.';		
 	} else {
@@ -14,7 +13,6 @@ function statusChangeCallback(response) {
 		document.getElementById('logi2').innerHTML = 'Sisselogimine';
 		document.getElementById('mant').innerHTML = '';
         document.getElementById('teretulemast').innerHTML = 'Tere tulemast e-hääletuse lehele!';
-        setButtons(true);
         document.getElementById('hääletus').innerHTML = 'Hääletamiseks pead olema sisselogitud.';
 	}
 }
@@ -46,5 +44,19 @@ function getInfo() {
         xmlhttp.open("GET", "getuser.php?id=" + response.id +
         		"&fname=" + response.first_name + "&lname=" + response.last_name, true);
         xmlhttp.send();
+        var xmlhttp2 = new XMLHttpRequest();
+        xmlhttp2.onreadystatechange = function() {
+            if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
+            	if (xmlhttp2.responseText == '1') {
+            		document.getElementById("hääletus").innerHTML = 'Sa oled juba hääletanud.';
+            		setButtons(true);
+				} else {
+					document.getElementById("hääletus").innerHTML = 'Sa pole veel hääletanud.';
+					setButtons(false);
+				}
+            }
+        }
+        xmlhttp2.open("GET", "checkvote.php", true);
+        xmlhttp2.send();
     });
 }
