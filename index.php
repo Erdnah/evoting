@@ -12,7 +12,7 @@
         <script async src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/voteHandler.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/updater.js" type="text/javascript" charset="utf-8"></script>
+        <script async src="js/updater.js" type="text/javascript" charset="utf-8"></script>
                
         <ul id="tabs">
             <li class="active">

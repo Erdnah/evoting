@@ -66,7 +66,7 @@ function addUser($id, $fname, $lname) {
 function getAllPartys()
 {
 	$conn = connect();
-	$sql = "SELECT * FROM tulem_partei ORDER BY Tulemus";
+	$sql = "SELECT * FROM tulem_partei ORDER BY Tulemus desc";
 	$stmt = $conn->query($sql);
 	return $stmt->fetchAll(PDO::FETCH_NUM);
 }
