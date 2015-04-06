@@ -48,7 +48,7 @@ function getInfo() {
         xmlhttp2.onreadystatechange = function() {
             if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
             	if (xmlhttp2.responseText == '1') {
-            		document.getElementById("hääletus").innerHTML = 'Sa oled juba hääletanud.';
+            		getVoteData();
             		setButtons(true);
 				} else {
 					document.getElementById("hääletus").innerHTML = 'Sa pole veel hääletanud.';

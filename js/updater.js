@@ -5,6 +5,17 @@ function update() {
 	updatePartei();
 }
 
+function getVoteData() {
+	var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById("hääletus").innerHTML = xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET", "getuservote.php", true);
+    xmlhttp.send();
+}
+
 function updateKandidaadid() {
 	var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
