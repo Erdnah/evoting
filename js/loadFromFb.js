@@ -6,6 +6,7 @@ function statusChangeCallback(response) {
 		document.getElementById('status').innerHTML = '';
 		document.getElementById('hääletus').innerHTML = '';
 		document.getElementById('logbtn').innerHTML = '';
+		document.getElementById('logbtn2').innerHTML = '';
 	} else if (response.status === 'not_authorized') {
 		document.getElementById('status').innerHTML = 'Andmete nägemiseks pead olema Facebooki logitud.';
 		
