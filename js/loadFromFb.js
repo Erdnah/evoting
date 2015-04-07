@@ -7,7 +7,7 @@ function statusChangeCallback(response) {
 		document.getElementById('hääletus').innerHTML = '';
 	} else if (response.status === 'not_authorized') {
 		document.getElementById('status').innerHTML = 'Andmete nägemiseks pead olema Facebooki logitud.';
-		document.getElementById('hääletus').innerHTML = 'Hääletamiseks pead olema sisselogitud.';
+		
 		setButtons(true);
 	} else {
 		document.getElementById('status').innerHTML = 'Palun logi Facebooki, et oma andmeid näha.';
