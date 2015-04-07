@@ -39,24 +39,25 @@ function getInfo() {
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 document.getElementById("mant").innerHTML = xmlhttp.responseText;
+                var xmlhttp2 = new XMLHttpRequest();
+                xmlhttp2.onreadystatechange = function() {
+                    if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
+                    	if (xmlhttp2.responseText == '1') {
+                    		getVoteData();
+                    		setButtons(true);
+        				} else {
+        					document.getElementById("hääletus").innerHTML = 'Sa pole veel hääletanud.';
+        					setButtons(false);
+        				}
+                    }
+                }
+                xmlhttp2.open("GET", "checkvote.php", true);
+                xmlhttp2.send();
             }
         }
         xmlhttp.open("GET", "getuser.php?id=" + response.id +
         		"&fname=" + response.first_name + "&lname=" + response.last_name, true);
         xmlhttp.send();
-        var xmlhttp2 = new XMLHttpRequest();
-        xmlhttp2.onreadystatechange = function() {
-            if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
-            	if (xmlhttp2.responseText == '1') {
-            		getVoteData();
-            		setButtons(true);
-				} else {
-					document.getElementById("hääletus").innerHTML = 'Sa pole veel hääletanud.';
-					setButtons(false);
-				}
-            }
-        }
-        xmlhttp2.open("GET", "checkvote.php", true);
-        xmlhttp2.send();
+        
     });
 }
