@@ -41,6 +41,9 @@
             <li>
                 <h2>Kandidaatide tabel</h2>
                 <div id="hääletus"></div>
+                <div id="logbtn">
+                  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
+                </div>
                 <div class="datagrid">
                 <table>
                     <thead>
@@ -90,6 +93,7 @@
             </li>
             <li>
                 <h2 id="logi2">Sisselogimine</h2>
+                
                 <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
             </li>
         </ul>
