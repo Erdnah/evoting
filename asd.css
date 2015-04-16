@@ -29,6 +29,10 @@ ul#tab li {
 	display: none;
 	padding: 30px;
 	border: solid 20px #d2f4e9;
+	overflow: auto;
+}
+ul#tab li button{
+	vertical-align:top;
 }
 ul#tab li.active {
 	display: block;
@@ -38,6 +42,13 @@ ul#tab li h2 {
 	margin-bottom: 30px;
 	padding-bottom: 5px;
 	border-bottom: solid 5px #32c896;
+}
+div#info {
+	float: right;
+	width: 50%;
+}
+button#hidden {
+	display: none;
 }
 .datagrid table {
 	border-collapse: collapse;
@@ -52,6 +63,14 @@ ul#tab li h2 {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	width:45%;
+	float: left;
+}
+.datagrid#parteid {
+	float: right;
+}
+.datagrid h3 {
+	padding: 0px 10px;
 }
 .datagrid table td, .datagrid table th {
 	padding: 3px 10px;
@@ -74,6 +93,12 @@ ul#tab li h2 {
 	border-left: 1px solid #E1EEF4;
 	font-size: 12px;
 	font-weight: normal;
+	
+}
+.datagrid table tbody tr.clickable:hover {
+	background-color: #615055;
+    opacity: 0.5;
+    cursor: pointer;
 }
 .datagrid table tbody .alt td {
 	background: #E1EEF4;

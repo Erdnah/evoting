@@ -13,6 +13,7 @@
         <script async src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/voteHandler.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/updater.js" type="text/javascript" charset="utf-8"></script>
+        <script defer src="js/slide.js" type="text/javascript" charset="utf-8"></script>
                
         <ul id="tabs">
             <li class="active">
@@ -61,27 +62,32 @@
                     foreach (getAllPersons() as $value) {
                         echo "<tr><td>$value[0]</td>" . "<td>$value[1]</td>". "<td>$value[2]</td>" . 
                         "<td>$value[3]</td>
-                        <td><button class=\"votebtn\" disabled type=\"button\" onclick=\"getId(this)\">Hääleta</button></td></tr>";
+                        </tr>";
                     }
                     ?>
                     </tbody>
                 </table>
-                <div>
-                
-                                
+                </div>
+                <div id="info">
+                <div id="infotekst">Vajuta kandidaadi peale, et näha tema infot!</div>
+                <button class="votebtn" id="hidden" type='button'>Hääleta</button></td>
+                </div>                           
             </li>
            
             <li>
                 <h2>Tulemused</h2>
-                <button type="button" onclick="update()">Uuenda</button>
-                Tulemused kandidaatide järgi:
-                <div class="datagrid">
-                <div id="kvotes"></div>
+                <button type="button" onclick="update()">
+                    Uuenda
+                </button>
+                
+                <div class="datagrid" id="kandidaadid">
+                    <h3>Tulemused kandidaatide järgi:</h3>
+                    <div id="kvotes"></div>
                 </div>
-                Tulemused parteide järgi:
-                 <div class="datagrid">               
-                   <div id="parteivotes">
-                   </div>         
+                
+                <div class="datagrid" id="parteid">                    
+                    <h3>Tulemused parteide järgi:</h3>
+                    <div id="parteivotes"></div>
                 </div>
             </li>
             <li>

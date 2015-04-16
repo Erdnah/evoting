@@ -1,5 +1,5 @@
-function getId (element) {
-	var id = element.parentNode.parentNode.cells[0].textContent;
+function getId (id) {
+	//var id = element.parentNode.parentNode.cells[0].textContent;
 	
 	var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
