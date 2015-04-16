@@ -6,10 +6,10 @@ $(".clickable").click(function() {
 	document.getElementsByClassName('votebtn')[0].addEventListener("click", function() {
 	    postVote(id);
 	}, false);
-	//console.log(this.children[0].textContent);
-	document.getElementById('infotekst').innerHTML = 'Siia peaks tulema ' + 
-	this.children[1].textContent + ' info varsti.\n';
+	//console.log(this.children[0].textContent);	
 	$("#info").slideToggle(100, function() {
+		document.getElementById('infotekst').innerHTML = 'Siia peaks tulema ' + 
+		this.children[1].textContent + ' info varsti.\n';
 		$("#info").slideToggle(100, function() {
 		    // Animation complete.
 		  });
