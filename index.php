@@ -60,7 +60,10 @@
                     include_once 'taskmodel.php';
 
                     foreach (getAllPersons() as $value) {
-                        echo "<tr><td>$value[0]</td>" . "<td>$value[1]</td>". "<td>$value[2]</td>" . 
+                        echo "<tr class=\"clickable\">
+                        <td>$value[0]</td>" . 
+                        "<td>$value[1]</td>". 
+                        "<td>$value[2]</td>" . 
                         "<td>$value[3]</td>
                         </tr>";
                     }
