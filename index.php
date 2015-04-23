@@ -50,7 +50,7 @@
             </li>
             <li>
                 <h2>Kandidaatide tabel</h2>
-                <div id="hääletus"></div>
+                <div id="hääletus" align="center"></div>
                 <div id="logbtn">
                   <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
                 </div>
@@ -87,11 +87,11 @@
             </li>
            
             <li>
-                <h2>Tulemused</h2>
-                <button type="button" onclick="update()">
+                <h2>Tulemused
+                    <button type="button" onclick="update()">
                     Uuenda
-                </button>
-                
+                </button></h2>
+                                
                 <div class="datagrid" id="kandidaadid">
                     <h3>Tulemused kandidaatide järgi:</h3>
                     <div id="kvotes"></div>
