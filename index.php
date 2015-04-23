@@ -82,7 +82,7 @@
                 </div>
                 <div id="info">
                 <div id="infotekst">Vajuta kandidaadi peale, et näha tema infot!</div>
-                <button class="votebtn" id="hidden" type='button'>Hääleta</button></td>
+                <button id="votebtn" disabled class="hidden" type='button'>Hääleta</button></td>
                 </div>                           
             </li>
            
