@@ -43,6 +43,30 @@ ul#tab li h2 {
 	padding-bottom: 5px;
 	border-bottom: solid 5px #32c896;
 }
+button {
+	background-color:#32c896;
+	border:1px solid #32c896;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+button:hover {
+	background-color:#238b68;
+}
+button:disabled {
+	cursor: default;
+    pointer-events: none;
+	opacity: 0.5;
+}	
+button:active {
+	position:relative;
+	top:1px;
+}
 div {
 	padding-bottom: 10px;
 }
