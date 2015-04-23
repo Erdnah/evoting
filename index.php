@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>E-hääletus</title>
-        <link rel="stylesheet" href="asd.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/asd.css">
+        <link rel="stylesheet" href="css/base.css"/>
     </head>
     <body>
         <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -14,7 +16,14 @@
         <script async src="js/voteHandler.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/updater.js" type="text/javascript" charset="utf-8"></script>
         <script defer src="js/slide.js" type="text/javascript" charset="utf-8"></script>
-               
+    <header>
+    <div id="title" class="container">
+        <h1>E-hääletus!</h1>
+        <h2>Lihtne veebirakendus hääletamiseks</h2>
+    </div>
+    </header><!-- /header -->
+    <div id="main">
+      <div class="container">           
         <ul id="tabs">
             <li class="active">
                 Avaleht
@@ -108,5 +117,7 @@
                 <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
             </li>
         </ul>
+        </div>
+        </div>
     </body>
 </html>
