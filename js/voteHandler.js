@@ -7,7 +7,7 @@ function postVote (id) {
             setButtons(true);
             updateKandidaadid();
             updatePartei();
-            document.getElementById("hääletus").innerHTML = 'Sa oled juba hääletanud.';
+            getVoteData();
             alert('Su hääl läks arvesse!');
             
         }
