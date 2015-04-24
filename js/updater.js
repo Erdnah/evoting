@@ -9,13 +9,22 @@ function getVoteData() {
 	var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            document.getElementById("hääletus").innerHTML = xmlhttp.responseText;
+        	if (xmlhttp.responseText == '0') {
+        		document.getElementById("hääletus").innerHTML = 'Sa pole veel hääletanud';       		
+        		setButtons(false);
+			} else {
+				document.getElementById("hääletus").innerHTML = xmlhttp.responseText;
+				setButtons(true);
+			}            
         }
     }
     xmlhttp.open("GET", "getuservote.php", true);
     xmlhttp.send();
 }
-
+function setButtons(kasDisabled) {
+	var button = document.getElementById('votebtn');
+		button.disabled = kasDisabled;
+}
 function updateKandidaadid() {
 	var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {

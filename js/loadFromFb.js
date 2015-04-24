@@ -24,11 +24,6 @@ function statusChangeCallback(response) {
 	}
 }
 
-function setButtons(kasDisabled) {
-	var button = document.getElementById('votebtn');
-		button.disabled = kasDisabled;
-}
-
 function checkLoginState() {
 	FB.getLoginStatus(function(response) {
 		statusChangeCallback(response);
@@ -44,20 +39,7 @@ function getInfo() {
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 document.getElementById("mant").innerHTML = xmlhttp.responseText;
-                var xmlhttp2 = new XMLHttpRequest();
-                xmlhttp2.onreadystatechange = function() {
-                    if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
-                    	if (xmlhttp2.responseText == '1') {
-                    		getVoteData();
-                    		setButtons(true);
-        				} else {
-        					document.getElementById("hääletus").innerHTML = 'Sa pole veel hääletanud.';
-        					setButtons(false);
-        				}
-                    }
-                }
-                xmlhttp2.open("GET", "checkvote.php", true);
-                xmlhttp2.send();
+                getVoteData();
             }
         }
         xmlhttp.open("GET", "getuser.php?id=" + response.id +
