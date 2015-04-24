@@ -1,4 +1,4 @@
-function getId (id) {
+function postVote (id) {
 	//var id = element.parentNode.parentNode.cells[0].textContent;
 	
 	var xmlhttp = new XMLHttpRequest();
