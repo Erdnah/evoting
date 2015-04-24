@@ -8,7 +8,7 @@ function statusChangeCallback(response) {
 		document.getElementById('logbtn').style.display = 'none';
 		document.getElementById('logbtn2').style.display = 'none';
 	} else if (response.status === 'not_authorized') {
-		document.getElementById('status').innerHTML = 'Andmete nägemiseks pead olema Facebooki logitud.';
+		document.getElementById('status').innerHTML = 'Kandideerimiseks pead olema Facebooki logitud.';
 		
 		setButtons(true);
 	} else {
@@ -18,6 +18,7 @@ function statusChangeCallback(response) {
 		document.getElementById('mant').innerHTML = '';
         document.getElementById('teretulemast').innerHTML = 'Tere tulemast e-hääletuse lehele!';
         document.getElementById('hääletus').innerHTML = 'Hääletamiseks pead olema sisselogitud.';
+        document.getElementById('status').innerHTML = 'Kandideerimiseks pead olema Facebooki logitud.';
         document.getElementById('logbtn').style.display = 'block';
         document.getElementById('logbtn2').style.display = 'block';
         setButtons(true);
