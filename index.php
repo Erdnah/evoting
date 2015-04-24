@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <title>E-hääletus</title>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="asd.css">
-        <link rel="stylesheet" href="base.css" />
+        <link rel="stylesheet" href="css/asd.css">
+        <link rel="stylesheet" href="css/base.css" />
     </head>
     <body>
         <script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
