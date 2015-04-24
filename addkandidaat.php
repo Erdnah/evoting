@@ -7,4 +7,4 @@ include_once 'taskmodel.php';
   
   addKandidaat($_SESSION['id'], $linn, $partei, $info);
 
-  header("Location: http://localhost/evoting/");
+  header("Location: http://ehaaletus.azurewebsites.net/");
