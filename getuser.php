@@ -24,7 +24,7 @@ if (count($kandidaat) == 0) {
     Partei:<br>
     <input type=\"text\" name=\"partei\">
     <br>
-    Info:<br>
+    Sinu valimislubadused:<br>
     <textarea rows=\"10\" cols=\"40\"  name=\"info\"></textarea><br>
     <br>
     <button type=\"submit\">Kandideeri</button>
