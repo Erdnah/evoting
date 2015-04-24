@@ -41,9 +41,10 @@ function postVote($id,$fbid)
 function getVoteData($fbid)
 {
     $conn = connect();
-    $sql = "select firstname, lastname, votedate
-    from votes, users, persons
-    where kellelt=users.id and kellele=persons.id and users.id='$fbid'";
+    $sql = "select eesnimi, perenimi, votedate
+    from kandidaat, kasutaja, votes
+    where kandidaat.fbid= kasutaja.fbid
+    and kellele=kandidaat.id and kellelt='$fbid'";
     $stmt = $conn->query($sql);
     return $stmt->fetchAll(PDO::FETCH_NUM);
 }
