@@ -36,7 +36,7 @@
                 Tulemused
             </li>
             <li>
-                Minu andmed
+                Kandideeri
             </li>
             <li id= "logi">
                 Logi sisse
