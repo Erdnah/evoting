@@ -5,10 +5,17 @@ $(".clickable").click(function() {
 	    postVote(id);
 	}, false);
 	//console.log(this.children[0].textContent);
-	
+	var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        	
+        	document.getElementById("infotekst").innerHTML = xmlhttp.responseText;
+			
+        }
+    }
+    xmlhttp.open("GET", "getkandidaat.php?id=" + id, true);
+    xmlhttp.send();
 	$("#info").slideToggle(100, function() {
-		document.getElementById('infotekst').innerHTML = 'Siia peaks tulema ' + 
-		name + ' info varsti.\n';
 		document.getElementById('votebtn').className = '';
 		$("#info").slideToggle(100, function() {
 		    // Animation complete.

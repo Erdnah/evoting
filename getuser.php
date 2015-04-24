@@ -7,35 +7,36 @@ $lname = $_REQUEST["lname"];
 
 
 include_once 'taskmodel.php';
-
+setVars($id, $fname, $lname);  
 $array = getUser($id);
 if (count($array) == 0) {
-    addUser($id, $fname, $lname);
+    addUser($id, $fname, $lname);    
+} 
+
+$kandidaat = getKandidaat($id, 'fbid');
+if (count($kandidaat) == 0) {
     echo "Eesnimi: $fname</br>
     Perenimi: $lname</br>
-    Aadress: Määramata</br>
-    Linn: Määramata</br>
-    Partei: Määramata</br>";
-    setVars($id, $fname, $lname, 'Määramata', 'Määramata', 'Määramata', 0);
+    <form id= \"kandiform\" action=\"addkandidaat.php\" method=\"POST\">
+    Linn:<br>
+    <input type=\"text\" name=\"linn\">
+    <br>
+    Partei:<br>
+    <input type=\"text\" name=\"partei\">
+    <br>
+    Info:<br>
+    <textarea rows=\"10\" cols=\"40\"  name=\"info\"></textarea><br>
+    <br>
+    <button type=\"submit\">Kandideeri</button>
+    </form>";
 } else {
-    $a = $array[0];
-    echo "Eesnimi: $a[1]</br>
-    Perenimi: $a[2]</br>
-    Aadress: $a[3]</br>
-    Linn: $a[4]</br>
-    Partei: $a[5]</br>
-    Hääletanud $a[7]</br>";
-    setVars($a[0], $a[1], $a[2], $a[3], $a[4], $a[5], $a[7]);
+    echo "Sa oled juba kandideerimas.";
 }
 
-function setVars ($id, $fname, $lname, $aadress, $linn, $partei, $onvote) {
+function setVars ($id, $fname, $lname) {
     $_SESSION['id']=$id;
     $_SESSION['eesnimi']=$fname;
     $_SESSION['perenimi']=$lname;
-    $_SESSION['aadress']=$aadress;
-    $_SESSION['linn']=$linn;
-    $_SESSION['partei']=$partei;
-    $_SESSION['onvote']=$onvote;
 }
 
 

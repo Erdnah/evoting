@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <title>E-hääletus</title>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/asd.css">
-        <link rel="stylesheet" href="css/base.css"/>
+        <link rel="stylesheet" href="asd.css">
+        <link rel="stylesheet" href="base.css" />
     </head>
     <body>
-        <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/modernizr.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
+        <script defer src="js/tabs.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/loadfbAPI.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/loadFromFb.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/voteHandler.js" type="text/javascript" charset="utf-8"></script>
@@ -23,7 +23,8 @@
     </div>
     </header><!-- /header -->
     <div id="main">
-      <div class="container">           
+      <div class="container">
+    
         <ul id="tabs">
             <li class="active">
                 Avaleht
@@ -52,46 +53,46 @@
                 <h2>Kandidaatide tabel</h2>
                 <div id="hääletus" align="center"></div>
                 <div id="logbtn">
-                  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
+                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
                 </div>
                 <div class="datagrid">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Number</th>
-                        <th>Nimi</th>
-                        <th>Linn</th>
-                        <th>Partei</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                   <?php
-                    include_once 'taskmodel.php';
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>Nimi</th>
+                                <th>Linn</th>
+                                <th>Partei</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            include_once 'taskmodel.php';
 
-                    foreach (getAllPersons() as $value) {
-                        echo "<tr class=\"clickable\">
-                        <td>$value[0]</td>" . 
-                        "<td>$value[1]</td>". 
-                        "<td>$value[2]</td>" . 
-                        "<td>$value[3]</td>
-                        </tr>";
-                    }
-                    ?>
-                    </tbody>
-                </table>
-                </div>
-                <div id="info">
-                <div id="infotekst">Vajuta kandidaadi peale, et näha tema infot!</div>
-                <button id="votebtn" disabled class="hidden" type='button'>Hääleta</button></td>
-                </div>                           
+                            foreach (getAllPersons() as $value) {
+                                echo "<tr class=\"clickable\"><td>$value[0]</td>" .
+                                 "<td>$value[1] $value[2]</td>" . 
+                                 "<td>$value[3]</td>" . 
+                                 "<td>$value[4]</td>
+                                </tr>";
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div id="info">
+                    <div id="infotekst" class="center">Vajuta kandidaadi peale, et näha tema infot!</div>
+                    <button id="votebtn" disabled class="hidden" type='button'>Hääleta</button></td>
+                    </div>
+                    
             </li>
-           
+
             <li>
                 <h2>Tulemused
                     <button type="button" onclick="update()">
                     Uuenda
                 </button></h2>
-                                
+                
                 <div class="datagrid" id="kandidaadid">
                     <h3>Tulemused kandidaatide järgi:</h3>
                     <div id="kvotes"></div>
@@ -101,19 +102,19 @@
                     <h3>Tulemused parteide järgi:</h3>
                     <div id="parteivotes"></div>
                 </div>
+                
             </li>
             <li>
                 <h2>Minu andmed</h2>
                 <div id="status"></div>
                 <div id="logbtn2">
-                  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
+                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
                 </div>
                 <div id="mant"></div>
-
             </li>
             <li>
                 <h2 id="logi2">Sisselogimine</h2>
-                
+
                 <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
             </li>
         </ul>

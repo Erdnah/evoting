@@ -25,10 +25,8 @@ function statusChangeCallback(response) {
 }
 
 function setButtons(kasDisabled) {
-	var buttons = document.getElementsByClassName('votebtn');
-	for (i = 0; i<buttons.length; i++) {
-		buttons[i].disabled = kasDisabled;
-	}
+	var button = document.getElementById('votebtn');
+		button.disabled = kasDisabled;
 }
 
 function checkLoginState() {
