@@ -51,9 +51,9 @@
             </li>
             <li>
                 <h2>Kandidaatide tabel</h2>
-                <div id="hääletus" align="center"></div>
+                <div id="hääletus"></div>
                 <div id="logbtn">
-                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
+                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
                 </div>
                 <div class="datagrid">
                     <table>
@@ -82,7 +82,7 @@
                     </div>
                     <div id="info">
                     <div id="infotekst" class="center">Vajuta kandidaadi peale, et näha tema infot!</div>
-                    <button id="votebtn" disabled class="hidden" type='button'>Hääleta</button></td>
+                    <button id="votebtn" disabled class="hidden" type='button'>Hääleta</button>
                     </div>
                     
             </li>
@@ -108,14 +108,14 @@
                 <h2>Minu andmed</h2>
                 <div id="status"></div>
                 <div id="logbtn2">
-                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
+                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
                 </div>
                 <div id="mant"></div>
             </li>
             <li>
                 <h2 id="logi2">Sisselogimine</h2>
 
-                <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
+                <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
             </li>
         </ul>
         </div>
