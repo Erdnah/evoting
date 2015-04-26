@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="fb: http://www.facebook.com/2008/fbml">
+<html>
     <head>
         <meta charset="UTF-8">
         <title>E-hääletus</title>
@@ -53,7 +53,7 @@
                 <h2>Kandidaatide tabel</h2>
                 <div id="hääletus"></div>
                 <div id="logbtn">
-                    <fb:login-button data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></fb:login-button>
+                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
                 </div>
                 <div class="datagrid">
                     <table>
@@ -108,14 +108,14 @@
                 <h2>Minu andmed</h2>
                 <div id="status"></div>
                 <div id="logbtn2">
-                    <fb:login-button data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></fb:login-button>
+                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
                 </div>
                 <div id="mant"></div>
             </li>
             <li>
                 <h2 id="logi2">Sisselogimine</h2>
 
-                <fb:login-button data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></fb:login-button>
+                <div class="fb-login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></div>
             </li>
         </ul>
         </div>
