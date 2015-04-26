@@ -108,7 +108,7 @@
                 <h2>Minu andmed</h2>
                 <div id="status"></div>
                 <div id="logbtn2">
-                    <fb:login-button" data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></fb:login-button>
+                    <fb:login-button data-max-rows="1" data-size="xlarge" onlogin="checkLoginState();" data-show-faces="false" data-auto-logout-link="true"></fb:login-button>
                 </div>
                 <div id="mant"></div>
             </li>
