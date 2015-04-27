@@ -37,8 +37,7 @@ function delKandidaat() {
 	var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        	getVoteData();
-        	updateAllKandidaadid();
+        	window.location.replace("http://ehaaletus.azurewebsites.net");
             alert('Sa pole enam kandideerimas!');
         }
     }

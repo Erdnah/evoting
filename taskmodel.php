@@ -56,7 +56,9 @@ function delVote($id) {
 }
 function delKandidaat($id) {
     $conn = connect();
-    $sql = "delete kandidaat where fbid='$id'";
+    $sql = "delete from votes where kellele in
+    (select id from kandidaat where fbid='$id');
+    delete kandidaat where fbid='$id'";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 }
