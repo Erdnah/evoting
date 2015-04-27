@@ -48,7 +48,18 @@ function getVoteData($fbid)
     $stmt = $conn->query($sql);
     return $stmt->fetchAll(PDO::FETCH_NUM);
 }
-
+function delVote($id) {
+    $conn = connect();
+    $sql = "delete votes where kellelt='$id'";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+}
+function delKandidaat($id) {
+    $conn = connect();
+    $sql = "delete kandidaat where fbid='$id'";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+}
 function getAllPersons()
 {
     $conn = connect();

@@ -30,7 +30,10 @@ if (count($kandidaat) == 0) {
     <button type=\"submit\">Kandideeri</button>
     </form>";
 } else {
-    echo "Sa oled juba kandideerimas.";
+    echo "Sa oled juba kandideerimas.
+    <button type=\"button\" onclick=\"delKandidaat()\">
+                    Kustuta nimekirjast
+                </button>";
 }
 
 function setVars ($id, $fname, $lname) {
