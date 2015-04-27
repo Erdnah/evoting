@@ -1,6 +1,7 @@
-update();
+updateAllKandidaadid();
+updateTulemused();
 
-function update() {
+function updateTulemused() {
 	updateKandidaadid();
 	updatePartei();
 }
@@ -37,6 +38,7 @@ function delKandidaat() {
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         	getVoteData();
+        	updateAllKandidaadid();
             alert('Sa pole enam kandideerimas!');
         }
     }
@@ -46,6 +48,16 @@ function delKandidaat() {
 function setButtons(kasDisabled) {
 	var button = document.getElementById('votebtn');
 		button.disabled = kasDisabled;
+}
+function updateAllKandidaadid() {
+	var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById("kandidaadidTabel").innerHTML = xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET", "getallkandidaadid.php", true);
+    xmlhttp.send();
 }
 function updateKandidaadid() {
 	var xmlhttp = new XMLHttpRequest();

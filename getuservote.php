@@ -9,8 +9,7 @@ if (count($array) == 0) {
     echo "0";
 } else {
     echo "Sa hääletasid $a[0] $a[1] poolt kuupäeval $a[2]
-    <button type=\"button\" onclick=\"delVote()\">
-                    Kustuta hääl
-                </button>";
+    <br>
+    <button type=\"button\" onclick=\"delVote()\">Kustuta hääl</button>";
 }    
 ?>

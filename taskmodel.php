@@ -60,7 +60,7 @@ function delKandidaat($id) {
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 }
-function getAllPersons()
+function getAllKandidaadid()
 {
     $conn = connect();
     $sql = "SELECT kandidaat.id, kasutaja.eesnimi,
