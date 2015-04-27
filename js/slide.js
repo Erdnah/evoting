@@ -1,4 +1,4 @@
-$(".clickable").click(function() {
+$("#kandidaadidTabel").on("click", ".clickable", function() {
 	var id = this.children[0].textContent;
 	var name = this.children[1].textContent;
 	document.getElementById('votebtn').addEventListener("click", function() {
