@@ -3,8 +3,6 @@ session_start();
 include_once 'taskmodel.php';
 
 $id = $_GET["id"];
-echo "$id";
-die();
 
 $kandidaat = getKandidaat($id, 'id');
 $kandidaat = $kandidaat[0];
