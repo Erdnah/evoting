@@ -2,7 +2,7 @@
 session_start();
 include_once 'taskmodel.php';
 
-$id = $_REQUEST["id"];
+$id = $_GET["id"];
 
 $kandidaat = getKandidaat($id, 'id');
 $kandidaat = $kandidaat[0];
