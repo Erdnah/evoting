@@ -55,7 +55,7 @@ function updateAllKandidaadid() {
             document.getElementById("kandidaadidTabel").innerHTML = xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET", "getallkandidaadid.php", true);
+    xmlhttp.open("POST", "getallkandidaadid.php", true);
     xmlhttp.send();
 }
 function updateKandidaadid() {
@@ -65,7 +65,7 @@ function updateKandidaadid() {
             document.getElementById("kvotes").innerHTML = xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET", "getvotes.php", true);
+    xmlhttp.open("POST", "getvotes.php", true);
     xmlhttp.send();
 }
 function updatePartei() {
@@ -75,6 +75,6 @@ function updatePartei() {
             document.getElementById("parteivotes").innerHTML = xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET", "getparteivotes.php", true);
+    xmlhttp.open("POST", "getparteivotes.php", true);
     xmlhttp.send();
 }

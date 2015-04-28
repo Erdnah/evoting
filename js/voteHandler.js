@@ -12,6 +12,6 @@ function postVote (id) {
             
         }
     }
-    xmlhttp.open("GET", "postvote.php?id=" + id, true);
+    xmlhttp.open("POST", "postvote.php?id=" + id, true);
     xmlhttp.send();
 }
