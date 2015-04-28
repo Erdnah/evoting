@@ -19,7 +19,7 @@ function getVoteData() {
 			}            
         }
     }
-    xmlhttp.open("GET", "getuservote.php", true);
+    xmlhttp.open("POST", "getuservote.php", true);
     xmlhttp.send();
 }
 function delVote() {
