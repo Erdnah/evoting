@@ -5,8 +5,7 @@ $lastId = (int) getLastVote();
  
 $time_wasted = 0;
 $lastIdQuery = ''; 
-$new_messages_check = getVotesAfter($timestamp);
-$num_rowsbefore = mysql_num_rows( $new_messages_check );
+$num_rowsbefore= (int) getVotesAfter($timestamp);
 $num_rows=0;
 if( $num_rows <= 0 ){
    while( $num_rows <= $num_rowsbefore ){
@@ -22,8 +21,7 @@ if( $num_rows <= 0 ){
     
          sleep( 2 );
          $newtimestamp = date('Y-m-d H:i:s');
-         $new_messages_check = getVotesAfter($newtimestamp);
-         $num_rows = mysql_num_rows( $new_messages_check );
+         $num_rows= (int) getVotesAfter($newtimestamp);
          $time_wasted += 1;
       }
    }
