@@ -21,7 +21,7 @@ function messages_longpolling( timestamp, lastId ){
                    alert('Uus hääl on lisandunud');
                }
                if (payload.status == 'no-results') {
-                   alert('Uut häält pole lisandunud');
+                   alert('Uut häält pole lisandunud'+payload.num_rows + payload.num_rows_before);
                }
            } else if (payload.status == 'error') {
                alert('We got confused, Please refresh the page!');

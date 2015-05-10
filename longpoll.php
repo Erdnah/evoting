@@ -12,7 +12,7 @@ if( $num_rows <= 0 ){
    while( $num_rows <= $num_rowsbefore ){
       if( $num_rows <= $num_rowsbefore ){
          if( $time_wasted >= 60 ){
-            die( json_encode( array( 'status' => 'no-results', 'lastId' => 0, 'timestamp' => time() ) ) );
+            die( json_encode( array( 'status' => 'no-results', 'num_rows' => $num_rows, 'num_rows_before' => $num_rowsbefore ) ) );
             exit;
          }
          if($num_rows > $num_rowsbefore){
@@ -20,7 +20,7 @@ if( $num_rows <= 0 ){
             exit;
          }
     
-         sleep( 1 );
+         sleep( 2 );
          $newtimestamp = date('Y-m-d H:i:s');
          $new_messages_check = getVotesAfter($newtimestamp);
          $num_rows = mysql_num_rows( $new_messages_check );
