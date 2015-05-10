@@ -19,6 +19,9 @@ function messages_longpolling( timestamp, lastId ){
                if (payload.status == 'results') {
                    alert('Uus hääl on lisandunud');
                }
+               if (payload.status == 'no-results') {
+                   alert('Uut häält pole lisandunud');
+               }
            } else if (payload.status == 'error') {
                alert('We got confused, Please refresh the page!');
            }
