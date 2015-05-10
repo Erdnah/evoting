@@ -13,6 +13,7 @@ function messages_longpolling( timestamp, lastId ){
        success: function (payload) {
            clearInterval(t);
            if (payload.status == 'results' || payload.status == 'no-results') {
+               console.log('payloadi staatus'+payload.status)
                t = setTimeout(function () {
                    messages_longpolling(payload.timestamp, payload.lastId);
                }, 2000);
@@ -30,7 +31,7 @@ function messages_longpolling( timestamp, lastId ){
            clearInterval(t);
            t = setTimeout(function () {
                messages_longpolling(payload.timestamp, payload.lastId);
-           }, 15000);
+           }, 10000);
        }
    });
 }
