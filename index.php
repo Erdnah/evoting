@@ -16,6 +16,7 @@
         <script async src="js/voteHandler.js" type="text/javascript" charset="utf-8"></script>
         <script async src="js/updater.js" type="text/javascript" charset="utf-8"></script>
         <script defer src="js/slide.js" type="text/javascript" charset="utf-8"></script>
+        <script defer src="js/longpolling.js" type="text/javascript" charset="utf-8"></script>
         <header>
             <div id="title" class="container">
                 <h1>E-hääletus!</h1>
