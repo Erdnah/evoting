@@ -43,7 +43,14 @@ function getVotesAfter($timestamp)
     $sql = "select * from votes where votedate>='$timestamp'";
     $stmt = $conn->query($sql);
     return $stmt->fetchAll(PDO::FETCH_NUM);
+}function getLastVote()
+{
+    $conn = connect();
+    $sql = "select top 1 id from votes";
+    $stmt = $conn->query($sql);
+    return $stmt->fetchAll(PDO::FETCH_NUM);
 }
+
 function getVoteData($fbid)
 {
     $conn = connect();
