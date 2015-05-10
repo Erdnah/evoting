@@ -5,13 +5,14 @@ $lastId = (int) getLastVote();
  
 $time_wasted = 0;
 $lastIdQuery = ''; 
-$num_rowsbefore= (int) getVotesAfter($timestamp);
+$new_messages_check = getVotesAfter($timestamp);
+$num_rowsbefore = mysql_num_rows( $new_messages_check );
 $num_rows=0;
 if( $num_rows <= 0 ){
    while( $num_rows <= $num_rowsbefore ){
       if( $num_rows <= $num_rowsbefore ){
          if( $time_wasted >= 60 ){
-            die( json_encode( array( 'status' => 'no-results', 'num_rows' => $num_rows, 'num_rows_before' => $num_rowsbefore ) ) );
+            die( json_encode( array( 'status' => 'no-results', 'num_rows' => $num_rows, 'num_rows_be' => time() ) ) );
             exit;
          }
          if($num_rows > $num_rowsbefore){
@@ -21,7 +22,8 @@ if( $num_rows <= 0 ){
     
          sleep( 2 );
          $newtimestamp = date('Y-m-d H:i:s');
-        $num_rows= (int) getVotesAfter($newtimestamp);
+         $new_messages_check = getVotesAfter($newtimestamp);
+         $num_rows = mysql_num_rows( $new_messages_check );
          $time_wasted += 1;
       }
    }
