@@ -12,7 +12,7 @@ if( $num_rows <= 0 ){
    while( $num_rows <= $num_rowsbefore ){
       if( $num_rows <= $num_rowsbefore ){
          if( $time_wasted >= 60 ){
-            die( json_encode( array( 'status' => 'no-results', 'num_rows' => $num_rows, 'num_rows_be' => time() ) ) );
+            die( json_encode( array( 'status' => 'no-results', 'num_rows' => $num_rows, 'time_wasted' => $timestamp ) ) );
             exit;
          }
          if($num_rows > $num_rowsbefore){
