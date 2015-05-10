@@ -15,9 +15,10 @@ if( $num_rows <= 0 ){
             die( json_encode( array( 'status' => 'no-results', 'lastId' => 0, 'timestamp' => time() ) ) );
             exit;
          }
-         if($num_rows >= $num_rowsbefore){
+         if($num_rows > $num_rowsbefore){
              $new_messages = 'Tere';
             die( json_encode( array( 'status' => 'results', 'timestamp' => date('Y-m-d H:i:s'), 'lastId' => $last_id, 'data' => $new_messages ) ) );
+            exit;
          }
     
          sleep( 1 );
