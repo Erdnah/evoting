@@ -1,34 +1,24 @@
 <?php
-require_once('taskmodel.php');
-$timestamp = date('Y-m-d H:i:s');
-$lastId = (int) getLastVote();
- 
+require_once ('taskmodel.php');
+
 $time_wasted = 0;
-$lastIdQuery = ''; 
-$new_messages_check = getVotesAfter($timestamp);
-$num_rowsbefore = mysql_num_rows( $new_messages_check );
-$num_rows=0;
-if( $num_rows <= 0 ){
-   while( $num_rows <= $num_rowsbefore ){
-      if( $num_rows <= $num_rowsbefore ){
-         if( $time_wasted >= 60 ){
-            die( json_encode( array( 'status' => 'no-results', 'num_rows' => $num_rows, 'time_wasted' => $timestamp ) ) );
-            exit;
-         }
-         if($num_rows > $num_rowsbefore){
-            die( json_encode( array( 'status' => 'results' ) ) );
-            exit;
-         }
-    
-         sleep( 2 );
-         $newtimestamp = date('Y-m-d H:i:s');
-         $new_messages_check = getVotesAfter($newtimestamp);
-         $num_rows = mysql_num_rows( $new_messages_check );
-         $time_wasted += 1;
-      }
-   }
+$new_messages_check = getVotesAfter();
+$num_rowsbefore = $_GET['startrows'];
+$num_rows = count($new_messages_check);
+while (true) {
+    if ($time_wasted >= 60) {
+        die(json_encode(array('status' => 'no-results', 'num_rows' => $num_rows, 'before' => $num_rowsbefore)));
+        exit ;
+    }
+    sleep(2);
+    $new_messages_check = getVotesAfter();
+    $num_rows = count($new_messages_check); 
+    if ($num_rows != $num_rowsbefore) {
+        die(json_encode(array('status' => 'results', 'num_rows' => $num_rows)));
+        exit ;
+    }    
+    $time_wasted += 1;
 }
+?>
  
 
-
-?>

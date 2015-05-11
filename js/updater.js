@@ -27,7 +27,7 @@ function delVote() {
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         	getVoteData();
-            alert('Hääl kustutatud!');
+            //alert('Hääl kustutatud!');
         }
     }
     xmlhttp.open("POST", "delvote.php", true);

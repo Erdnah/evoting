@@ -6,10 +6,8 @@ function postVote (id) {
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             setButtons(true);
-            updateKandidaadid();
-            updatePartei();
             getVoteData();
-            alert('Su hääl läks arvesse!');
+            //alert('Su hääl läks arvesse!');
             
         }
     }
